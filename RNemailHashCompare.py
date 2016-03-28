@@ -8,9 +8,9 @@ import multiprocessing
 
 
 def HashCompare():
-    with open('/home/jhamilton/PycharmProjects/DryWhiteToast/EmailTest.csv', 'rb') as pFile:
-        with open('/home/jhamilton/PycharmProjects/DryWhiteToast/RNhashCompareTester.csv', 'rb') as RNfile:
-            with open('/home/jhamilton/PycharmProjects/DryWhiteToast/RNhashReturn.csv', 'w') as output:
+    with open('RNemailHashComparePartTest.csv', 'rb') as pFile:
+        with open('RNemailHashCompareRSNTest.csv', 'rb') as RNfile:
+            with open('RNhashReturn.csv', 'w') as output:
                 writer = csv.writer(output, delimiter=',')
                 preader = csv.reader(pFile)
                 rreader = csv.reader(RNfile)
