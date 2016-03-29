@@ -17,10 +17,15 @@ def ReadWrite(efile, filewrite, rfile):
                     rowstring = rowstring.strip()
                     stringhash = Hashing(rowstring)
                     sendrnlist = ReadRhash(rnreader)
-                    listsend = CompareHash([rowstring], [stringhash], sendrnlist)
+                    resToDict = makeDictionary(rowstring, stringhash)
+                    cleanRlist = [x for x in sendrnlist if x is not None]
+                    print cleanRlist
+#                    getResults = compareHash(resToDict, sendrnlist)
+
     csvfile.close()
     rhashfile.close()
     outputfile.close()
+
 
 def Hashing(lines):
     for line in lines:
@@ -32,23 +37,42 @@ def Hashing(lines):
 
 def ReadRhash(rnhashlist):
     for liners in rnhashlist:
-        listers = list(liners)
-        return listers
+#        listers = tuple(liners)
+        return liners
 
 
-def CompareHash(emailp, hashp, rfile):
-    clean = (filter(None, (emailp,hashp, rfile)))
-    print clean
+def makeDictionary(emailp, hashp):
+    rdictionary = {}
+    rdictionary[emailp] = hashp
+    return rdictionary
 
 
-#    for elements in hashp:
+#def compareHash(pDict, rhashTuple):
+#    print (pDict, rhashTuple)
+#    for element in rfile:
+#        if element in rdictionary:
+#            print element, rdictionary(element)
+
+
+
+
+        #    result [emailp] = (set(hashp))
+
+        # for a in clean[0]:
+        #    for b in clean[1]:
+        #        for c in clean[2]:
+        #           [x for x, y in b in c:
+        #               print
+
+
+# for elements in hashp:
 #        if elements in rfile:
 #            answer = [elements]
 #            print answer
 
-    for elements in clean[1]:
-        if elements in clean[2]:
-            print elements
+#    for elements in clean[1]:
+#        if elements in clean[2]:
+#            print elements
 
 #    resultzip = zip(emailp, hashp, rfile)
 #    match_results = [idx for idx, pair in enumerate(resultzip) if pair[1] == pair[2]]
@@ -58,14 +82,14 @@ def CompareHash(emailp, hashp, rfile):
 
 
 
-emailList = ('EmailTest.csv')
+emailList = ('pHashEmails.csv')
 output = ('pHashComp2Emailresult.csv')
-rhashlist = ('pHashComp2_rnTestHashList.csv')
-rowsInFile = ReadWrite(emailList, output, rhashlist)
+rhashlist = ('rHashed.csv')
+# rowsInFile = ReadWrite(emailList, output, rhashlist)
 # rnHashList = ReadRHash(rhashlist)
 
 
 # ------------ MAIN SCRIPT STARTS HERE -----------------
-# if __name__ == '__main__':
-#    emailsProcessed = multiprocessing.Process(target=ReadWrite(emailList, output, rhashlist))
-#    emailsProcessed.start()
+if __name__ == '__main__':
+    emailsProcessed = multiprocessing.Process(target=ReadWrite(emailList, output, rhashlist))
+    emailsProcessed.start()
