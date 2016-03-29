@@ -37,24 +37,30 @@ def ReadRhash(rnhashlist):
 
 
 def CompareHash(emailp, hashp, rfile):
-    result = (hashp == rfile)
-    if result is True:
-        result2 = (emailp, result)
-        print result2[0]
+    clean = (filter(None, (emailp,hashp, rfile)))
+    print clean
+
+
+#    for elements in hashp:
+#        if elements in rfile:
+#            answer = [elements]
+#            print answer
+
+    for elements in clean[1]:
+        if elements in clean[2]:
+            print elements
+
+#    resultzip = zip(emailp, hashp, rfile)
+#    match_results = [idx for idx, pair in enumerate(resultzip) if pair[1] == pair[2]]
+#    print pair[0]
 
 
 
 
 
-
-
-
-
-
-
-emailList = ('/home/ragnar/PycharmProjects/DryWhiteToast/EmailTest.csv')
-output = ('/home/ragnar/PycharmProjects/DryWhiteToast/Hashed.csv')
-rhashlist = ('/home/ragnar/PycharmProjects/DryWhiteToast/ReturnedEmailCompare.csv')
+emailList = ('EmailTest.csv')
+output = ('pHashComp2Emailresult.csv')
+rhashlist = ('pHashComp2_rnTestHashList.csv')
 rowsInFile = ReadWrite(emailList, output, rhashlist)
 # rnHashList = ReadRHash(rhashlist)
 
