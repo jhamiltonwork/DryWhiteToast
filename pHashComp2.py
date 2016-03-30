@@ -18,9 +18,10 @@ def ReadWrite(efile, filewrite, rfile):
                     stringhash = Hashing(rowstring)
                     sendrnlist = ReadRhash(rnreader)
                     resToDict = makeDictionary(rowstring, stringhash)
-                    cleanRlist = [x for x in sendrnlist if x is not None]
-                    print cleanRlist
-#                    getResults = compareHash(resToDict, sendrnlist)
+                    #                    cleanRlist = [x for x in sendrnlist if x is not None]
+                    #                    print cleanRlist
+                    cleanTuple = compareHash(resToDict, sendrnlist, writer)
+                    #                    print(cleanTuple)
 
     csvfile.close()
     rhashfile.close()
@@ -37,7 +38,7 @@ def Hashing(lines):
 
 def ReadRhash(rnhashlist):
     for liners in rnhashlist:
-#        listers = tuple(liners)
+        #        listers = tuple(liners)
         return liners
 
 
@@ -47,42 +48,27 @@ def makeDictionary(emailp, hashp):
     return rdictionary
 
 
-#def compareHash(pDict, rhashTuple):
-#    print (pDict, rhashTuple)
-#    for element in rfile:
-#        if element in rdictionary:
-#            print element, rdictionary(element)
+def compareHash(pDict, rhashList, filewriter):
+    cleanedNoneTypeList = []
+    if rhashList:
+        cleanedNoneTypeList = cleanList(rhashList)
+    else:
+        pass
+    cset = set(cleanedNoneTypeList)
+    for key, value in pDict.items():
+        if cset and value[0] in cset:
+            filewriter.writerow([key])
+
+
+def cleanList(receiveList):
+    for lines in receiveList:
+        if receiveList:
+            return lines
+        break
 
 
 
-
-        #    result [emailp] = (set(hashp))
-
-        # for a in clean[0]:
-        #    for b in clean[1]:
-        #        for c in clean[2]:
-        #           [x for x, y in b in c:
-        #               print
-
-
-# for elements in hashp:
-#        if elements in rfile:
-#            answer = [elements]
-#            print answer
-
-#    for elements in clean[1]:
-#        if elements in clean[2]:
-#            print elements
-
-#    resultzip = zip(emailp, hashp, rfile)
-#    match_results = [idx for idx, pair in enumerate(resultzip) if pair[1] == pair[2]]
-#    print pair[0]
-
-
-
-
-
-emailList = ('pHashEmails.csv')
+emailList = ('EmailTest.csv')
 output = ('pHashComp2Emailresult.csv')
 rhashlist = ('rHashed.csv')
 # rowsInFile = ReadWrite(emailList, output, rhashlist)
