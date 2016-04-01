@@ -1,28 +1,28 @@
-# --------------DryWhiteToast ver. 1.1.0
-# Built by 'James Robert Cameron Hamilton' handle='Felix','537i'
-#
-#
-# import hashlib  # Python Standard Library - Secure hashes and message digests
-import csv  # Python Standard Library - reader and writer for csv files
+import pandas
 import multiprocessing
+import time
 
 
-def HashCompare():
-    with open('RNemailHashComparePartTest.csv', 'rb') as pFile:
-        with open('RNemailHashCompareRSNTest.csv', 'rb') as RNfile:
-            with open('RNhashReturn.csv', 'w') as output:
-                writer = csv.writer(output, delimiter=',')
-                preader = csv.reader(pFile)
-                rreader = csv.reader(RNfile)
-                plist = list(preader)
-                rlist = list(rreader)
-                for element in plist:
-                    if element not in rlist:
-                        assert isinstance(element, list)
-                        writer.writerow(element)
+def ReadMergeCompare(pHash, rHash, output):
+    coln = ['Hashes']
+    phashcsv = pandas.read_csv('pHashed.csv', names=coln)
+    coln2 = ['Hashes']
+    rhashcsv = pandas.read_csv('Hashed.csv', names=coln2)
+    common = phashcsv.merge(rhashcsv, on=['Hashes'])
+    results = phashcsv[(~phashcsv.Hashes.isin(common.Hashes))]
 
 
+def WriteCSV(filewrite):
+    results.to_csv(filewrite, sep='\t', encoding='utf-8')
+
+
+pCSV = ('pHashed.csv')
+rCSV = ('Hashed.csv')
+oCSV = ('RNhashReturn.csv')
 # ------------ MAIN SCRIPT STARTS HERE -----------------
 if __name__ == '__main__':
-    hashEliminator = multiprocessing.Process(target=HashCompare)
-    hashEliminator.start()
+    startTime = time.time()
+    hashcomparesults = multiprocessing.Process(target=ReadMergeCompare(pCSV, rCSV, oCSV))
+    hashcomparesults.start()
+    elapsedTime = time.time() - startTime
+    print 'Duration: ', elapsedTime
