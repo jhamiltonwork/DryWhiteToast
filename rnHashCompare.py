@@ -4,16 +4,18 @@ import time
 
 
 def ReadMergeCompare(pHash, rHash, output):
-    coln = ['Hashes']
-    phashcsv = pandas.read_csv('pHashed.csv', names=coln)
-    coln2 = ['Hashes']
-    rhashcsv = pandas.read_csv('Hashed.csv', names=coln2)
-    common = phashcsv.merge(rhashcsv, on=['Hashes'])
-    results = phashcsv[(~phashcsv.Hashes.isin(common.Hashes))]
+    coln = ['Hash']
+    phashcsv = pandas.read_csv(pHash, names=coln)
+    coln2 = ['Hash']
+    rhashcsv = pandas.read_csv(rHash, names=coln2)
+    common = phashcsv.merge(rhashcsv, on=['Hash'])
+    results = phashcsv[(~phashcsv.Hash.isin(common.Hash))]
+    results.to_csv(output, sep=',', header=False, index=False, encoding='utf-8')
 
 
 def WriteCSV(filewrite):
-    results.to_csv(filewrite, sep='\t', encoding='utf-8')
+    pass
+    filewrite.to_csv(filewrite, sep=False, encoding='utf-8')
 
 
 pCSV = ('pHashed.csv')
