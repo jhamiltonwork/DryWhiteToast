@@ -1,0 +1,70 @@
+2016-04-07 13:14:43,383 
+2016-04-07 13:14:43,383 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/pcombined.py
+
+2016-04-07 13:14:43,383 Starting Dry White Toast
+2016-04-07 13:14:43,383 Version: 1.0.0
+2016-04-07 13:14:43,383 Release Date: April 11, 2016
+
+2016-04-07 13:14:43,383 The license will expire in 85 days
+
+2016-04-07 13:14:43,383 Local host data
+2016-04-07 13:14:43,383 OS flavor:           linux2
+2016-04-07 13:14:43,383 Kernel version       2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010]
+2016-04-07 13:14:43,383 
+2016-04-07 13:14:43,383 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-07 13:14:43,384 MAC address:         a4:34:d9:64:a6:45
+2016-04-07 13:14:43,384 Current IP address:  172.19.28.131
+2016-04-07 13:14:43,384 
+2016-04-07 13:14:43,384 
+2016-04-07 13:14:43,384 Starting ParseCommandLine
+2016-04-07 13:14:43,385 
+2016-04-07 13:14:43,385 Starting ReadWrite Function
+2016-04-07 13:14:43,385 Creating output file path
+2016-04-07 13:14:43,385 Complete
+
+2016-04-07 13:14:43,385 Reading csv file into DataFrame
+2016-04-07 13:14:43,739 Complete
+
+2016-04-07 13:14:43,739 Storing the shape of the Dataframe
+2016-04-07 13:14:43,739 Complete
+
+2016-04-07 13:14:43,739 Verifying there is only one column
+2016-04-07 13:14:43,739 verified
+
+2016-04-07 13:14:43,739 Verifying that all csv rows contain emails
+2016-04-07 13:14:43,937 Verified
+
+2016-04-07 13:14:43,937 Removing all white spaces and making all emails lower cased
+2016-04-07 13:14:44,072 complete
+
+2016-04-07 13:14:44,073 Creating sha512 hash id for each email string
+2016-04-07 13:14:45,039 complete
+
+2016-04-07 13:14:45,039 Writing hash list to csv in /home/snarf/PycharmProjects/DryWhiteToast/pHashed.csv
+2016-04-07 13:14:46,561 complete
+
+2016-04-07 13:14:46,574 Elapsed Time: 3.19196295738 seconds
+2016-04-07 13:14:46,575 
+2016-04-07 13:14:46,575 Program Terminated Normally
+2016-04-07 13:14:46,575 
+2016-04-08 11:06:04,010 
+2016-04-08 11:06:04,010 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/pcombined.py
+
+2016-04-08 11:06:04,010 Starting Dry White Toast
+2016-04-08 11:06:04,010 Version: 1.0.0
+2016-04-08 11:06:04,010 Release Date: April 11, 2016
+
+2016-04-08 11:06:04,011 The license will expire in 84 days
+
+2016-04-08 11:06:04,011 Local host data
+2016-04-08 11:06:04,011 OS flavor:           linux2
+2016-04-08 11:06:04,011 Kernel version       2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010]
+2016-04-08 11:06:04,011 
+2016-04-08 11:06:04,011 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-08 11:06:04,011 MAC address:         a4:34:d9:64:a6:45
+2016-04-08 11:06:04,011 Current IP address:  172.19.28.131
+2016-04-08 11:06:04,011 
+2016-04-08 11:06:04,011 
+2016-04-08 11:06:04,011 Starting ParseCommandLine

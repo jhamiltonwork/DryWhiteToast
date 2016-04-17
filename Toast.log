@@ -1,0 +1,1836 @@
+2016-04-07 13:12:12,835 
+2016-04-07 13:12:12,835 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-07 13:12:12,835 Starting Dry White Toast
+2016-04-07 13:12:12,835 Version: 1.0.0
+2016-04-07 13:12:12,835 Release Date: April 11, 2016
+
+2016-04-07 13:12:12,836 The license will expire in 85 days
+
+2016-04-07 13:12:12,836 Local host data
+2016-04-07 13:12:12,836 OS flavor:           linux2
+2016-04-07 13:12:12,836 Kernel version       2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010]
+2016-04-07 13:12:12,836 
+2016-04-07 13:12:12,836 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-07 13:12:12,836 MAC address:         a4:34:d9:64:a6:45
+2016-04-07 13:12:12,836 Current IP address:  172.19.28.131
+2016-04-07 13:12:12,836 
+2016-04-07 13:12:12,836 
+2016-04-07 13:12:12,836 Starting ParseCommandLine
+
+2016-04-07 13:12:12,837 Verifying which CLI arguments are selected
+2016-04-07 13:12:12,837 verbose selected
+2016-04-07 13:12:12,837 email to hash function selected
+2016-04-07 13:12:12,837 
+2016-04-07 13:12:12,837 Starting ReadWrite Function
+2016-04-07 13:12:12,837 Creating output file path
+2016-04-07 13:12:12,837 Complete
+
+2016-04-07 13:12:12,837 Reading csv file into DataFrame
+2016-04-07 13:12:13,526 Complete
+
+2016-04-07 13:12:13,526 Storing the shape of the Dataframe
+2016-04-07 13:12:13,526 Complete
+
+2016-04-07 13:12:13,526 Verifying there is only one column
+2016-04-07 13:12:13,526 verified
+
+2016-04-07 13:12:13,526 Verifying that all csv rows contain emails
+2016-04-07 13:12:13,908 1000000 emails found in 1000001 rows
+
+2016-04-07 13:12:13,908 Selecting only rows with emails
+2016-04-07 13:12:14,571 complete
+
+2016-04-07 13:12:14,571 Removing all white spaces and making all emails lower cased
+2016-04-07 13:12:14,846 complete
+
+2016-04-07 13:12:14,846 Creating sha512 hash id for each email string
+2016-04-07 13:12:16,792 complete
+
+2016-04-07 13:12:16,792 Writing hash list to csv in /home/snarf/PycharmProjects/DryWhiteToast/Hashed.csv
+2016-04-07 13:12:19,834 complete
+
+2016-04-07 13:12:19,857 Elapsed Time: 7.02561497688 seconds
+2016-04-07 13:12:19,857 
+2016-04-07 13:12:19,857 Program Terminated Normally
+2016-04-07 13:12:19,858 
+2016-04-07 13:15:59,927 
+2016-04-07 13:15:59,927 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-07 13:15:59,927 Starting Dry White Toast
+2016-04-07 13:15:59,927 Version: 1.0.0
+2016-04-07 13:15:59,928 Release Date: April 11, 2016
+
+2016-04-07 13:15:59,928 The license will expire in 85 days
+
+2016-04-07 13:15:59,928 Local host data
+2016-04-07 13:15:59,928 OS flavor:           linux2
+2016-04-07 13:15:59,928 Kernel version       2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010]
+2016-04-07 13:15:59,928 
+2016-04-07 13:15:59,928 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-07 13:15:59,928 MAC address:         a4:34:d9:64:a6:45
+2016-04-07 13:15:59,928 Current IP address:  172.19.28.131
+2016-04-07 13:15:59,928 
+2016-04-07 13:15:59,928 
+2016-04-07 13:15:59,928 Starting ParseCommandLine
+
+2016-04-07 13:15:59,929 Verifying which CLI arguments are selected
+2016-04-07 13:15:59,929 email to hash function selected
+2016-04-07 13:15:59,929 
+2016-04-07 13:15:59,929 Starting ReadWrite Function
+2016-04-07 13:15:59,929 Creating output file path
+2016-04-07 13:15:59,929 Complete
+
+2016-04-07 13:15:59,929 Reading csv file into DataFrame
+2016-04-07 13:16:00,679 Complete
+
+2016-04-07 13:16:00,679 Storing the shape of the Dataframe
+2016-04-07 13:16:00,679 Complete
+
+2016-04-07 13:16:00,679 Verifying there is only one column
+2016-04-07 13:16:00,679 verified
+
+2016-04-07 13:16:00,679 Verifying that all csv rows contain emails
+2016-04-07 13:16:00,909 0 emails found in 500000 rows
+
+2016-04-07 13:16:00,909 Selecting only rows with emails
+2016-04-07 13:16:01,211 complete
+
+2016-04-07 13:16:01,211 Removing all white spaces and making all emails lower cased
+2016-04-07 13:16:01,212 complete
+
+2016-04-07 13:16:01,212 Creating sha512 hash id for each email string
+2016-04-07 13:16:01,212 complete
+
+2016-04-07 13:16:01,212 Writing hash list to csv in /home/snarf/PycharmProjects/DryWhiteToast/Hashed.csv
+2016-04-07 13:16:01,227 complete
+
+2016-04-07 13:16:01,227 hash matching function selected
+2016-04-07 13:16:01,227 
+2016-04-07 13:16:01,227 Starting hash compare function
+2016-04-07 13:16:01,227 Creating output file path
+2016-04-07 13:16:01,227 complete
+
+2016-04-07 13:16:01,227 Reading partner hash csv file into DataFrame
+2016-04-07 13:16:01,227 Failed to read in hash list
+2016-04-07 13:16:01,234 Elapsed Time: 1.30773711205 seconds
+2016-04-07 13:16:01,235 
+2016-04-07 13:16:01,235 Program Terminated Normally
+2016-04-07 13:16:01,235 
+2016-04-07 13:16:08,660 
+2016-04-07 13:16:08,660 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-07 13:16:08,660 Starting Dry White Toast
+2016-04-07 13:16:08,660 Version: 1.0.0
+2016-04-07 13:16:08,660 Release Date: April 11, 2016
+
+2016-04-07 13:16:08,660 The license will expire in 85 days
+
+2016-04-07 13:16:08,660 Local host data
+2016-04-07 13:16:08,661 OS flavor:           linux2
+2016-04-07 13:16:08,661 Kernel version       2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010]
+2016-04-07 13:16:08,661 
+2016-04-07 13:16:08,661 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-07 13:16:08,661 MAC address:         a4:34:d9:64:a6:45
+2016-04-07 13:16:08,661 Current IP address:  172.19.28.131
+2016-04-07 13:16:08,661 
+2016-04-07 13:16:08,661 
+2016-04-07 13:16:08,661 Starting ParseCommandLine
+
+2016-04-07 13:16:08,662 Verifying which CLI arguments are selected
+2016-04-07 13:16:08,662 verbose selected
+2016-04-07 13:16:08,662 email to hash function selected
+2016-04-07 13:16:08,662 
+2016-04-07 13:16:08,662 Starting ReadWrite Function
+2016-04-07 13:16:08,662 Creating output file path
+2016-04-07 13:16:08,662 Complete
+
+2016-04-07 13:16:08,662 Reading csv file into DataFrame
+2016-04-07 13:16:09,402 Complete
+
+2016-04-07 13:16:09,402 Storing the shape of the Dataframe
+2016-04-07 13:16:09,402 Complete
+
+2016-04-07 13:16:09,402 Verifying there is only one column
+2016-04-07 13:16:09,403 verified
+
+2016-04-07 13:16:09,403 Verifying that all csv rows contain emails
+2016-04-07 13:16:09,641 0 emails found in 500000 rows
+
+2016-04-07 13:16:09,641 Selecting only rows with emails
+2016-04-07 13:16:09,939 complete
+
+2016-04-07 13:16:09,939 Removing all white spaces and making all emails lower cased
+2016-04-07 13:16:09,940 complete
+
+2016-04-07 13:16:09,940 Creating sha512 hash id for each email string
+2016-04-07 13:16:09,941 complete
+
+2016-04-07 13:16:09,941 Writing hash list to csv in /home/snarf/PycharmProjects/DryWhiteToast/Hashed.csv
+2016-04-07 13:16:09,943 complete
+
+2016-04-07 13:16:09,944 hash matching function selected
+2016-04-07 13:16:09,944 
+2016-04-07 13:16:09,944 Starting hash compare function
+2016-04-07 13:16:09,944 Creating output file path
+2016-04-07 13:16:09,944 complete
+
+2016-04-07 13:16:09,944 Reading partner hash csv file into DataFrame
+2016-04-07 13:16:09,945 Failed to read in hash list
+2016-04-07 13:16:09,953 Elapsed Time: 1.29384493828 seconds
+2016-04-07 13:16:09,954 
+2016-04-07 13:16:09,954 Program Terminated Normally
+2016-04-07 13:16:09,954 
+2016-04-07 13:16:37,687 
+2016-04-07 13:16:37,688 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-07 13:16:37,688 Starting Dry White Toast
+2016-04-07 13:16:37,688 Version: 1.0.0
+2016-04-07 13:16:37,688 Release Date: April 11, 2016
+
+2016-04-07 13:16:37,688 The license will expire in 85 days
+
+2016-04-07 13:16:37,688 Local host data
+2016-04-07 13:16:37,688 OS flavor:           linux2
+2016-04-07 13:16:37,688 Kernel version       2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010]
+2016-04-07 13:16:37,688 
+2016-04-07 13:16:37,688 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-07 13:16:37,688 MAC address:         a4:34:d9:64:a6:45
+2016-04-07 13:16:37,688 Current IP address:  172.19.28.131
+2016-04-07 13:16:37,688 
+2016-04-07 13:16:37,688 
+2016-04-07 13:16:37,688 Starting ParseCommandLine
+
+2016-04-07 13:16:37,689 Verifying which CLI arguments are selected
+2016-04-07 13:16:37,689 verbose selected
+2016-04-07 13:16:37,689 hash matching function selected
+2016-04-07 13:16:37,689 
+2016-04-07 13:16:37,689 Starting hash compare function
+2016-04-07 13:16:37,689 Creating output file path
+2016-04-07 13:16:37,690 complete
+
+2016-04-07 13:16:37,690 Reading partner hash csv file into DataFrame
+2016-04-07 13:16:38,433 complete
+
+2016-04-07 13:16:38,433 Reading RSN hash csv file into DataFrame
+2016-04-07 13:16:38,434 complete
+
+2016-04-07 13:16:38,434 Merging common partner hash rows to RSN hash rows
+2016-04-07 13:16:38,749 complete
+
+2016-04-07 13:16:38,749 Removing matching partner hash rows
+2016-04-07 13:16:38,787 complete
+
+2016-04-07 13:16:38,787 Writing hash list to csv in /home/snarf/PycharmProjects/DryWhiteToast/comparedListToReturn.csv
+2016-04-07 13:16:40,252 complete
+
+2016-04-07 13:16:40,266 Elapsed Time: 2.57920789719 seconds
+2016-04-07 13:16:40,266 
+2016-04-07 13:16:40,266 Program Terminated Normally
+2016-04-07 13:16:40,266 
+2016-04-08 11:07:27,998 
+2016-04-08 11:07:27,998 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-08 11:07:27,998 Starting Dry White Toast
+2016-04-08 11:07:27,998 Version: 1.0.0
+2016-04-08 11:07:27,998 Release Date: April 11, 2016
+
+2016-04-08 11:07:27,998 The license will expire in 84 days
+
+2016-04-08 11:07:27,999 Local host data
+2016-04-08 11:07:27,999 OS flavor:           linux2
+2016-04-08 11:07:27,999 Kernel version       2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010]
+2016-04-08 11:07:27,999 
+2016-04-08 11:07:27,999 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-08 11:07:27,999 MAC address:         a4:34:d9:64:a6:45
+2016-04-08 11:07:27,999 Current IP address:  172.19.28.131
+2016-04-08 11:07:27,999 
+2016-04-08 11:07:27,999 
+2016-04-08 11:07:27,999 Starting ParseCommandLine
+
+2016-04-08 11:07:28,000 Verifying which CLI arguments are selected
+2016-04-08 11:07:28,000 verbose selected
+2016-04-08 11:07:28,001 email to hash function selected
+2016-04-08 11:07:28,001 
+2016-04-08 11:07:28,001 Starting ReadWrite Function
+2016-04-08 11:07:28,001 Creating output file path
+2016-04-08 11:07:28,001 Complete
+
+2016-04-08 11:07:28,001 Reading csv file into DataFrame
+2016-04-08 11:07:28,740 Complete
+
+2016-04-08 11:07:28,740 Storing the shape of the Dataframe
+2016-04-08 11:07:28,740 Complete
+
+2016-04-08 11:07:28,741 Verifying there is only one column
+2016-04-08 11:07:28,741 verified
+
+2016-04-08 11:07:28,741 Verifying that all csv rows contain emails
+2016-04-08 11:07:28,970 0 emails found in 500000 rows
+
+2016-04-08 11:07:28,970 Selecting only rows with emails
+2016-04-08 11:07:29,254 complete
+
+2016-04-08 11:07:29,254 Removing all white spaces and making all emails lower cased
+2016-04-08 11:07:29,255 complete
+
+2016-04-08 11:07:29,255 Creating sha512 hash id for each email string
+2016-04-08 11:07:29,255 complete
+
+2016-04-08 11:07:29,255 Writing hash list to csv in /home/snarf/PycharmProjects/DryWhiteToast/Hashed.csv
+2016-04-08 11:07:29,256 complete
+
+2016-04-08 11:07:29,265 Elapsed Time: 1.26726698875 seconds
+2016-04-08 11:07:29,265 
+2016-04-08 11:07:29,265 Program Terminated Normally
+2016-04-08 11:07:29,265 
+2016-04-16 17:45:42,775 
+2016-04-16 17:45:42,775 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-16 17:45:42,775 Starting Dry White Toast
+2016-04-16 17:45:42,775 Version: 1.0.0
+2016-04-16 17:45:42,775 Release Date: April 11, 2016
+
+2016-04-16 17:45:42,775 The license will expire in 76 days
+
+2016-04-16 17:45:42,776 Local host data
+2016-04-16 17:45:42,776 OS flavor:           linux
+2016-04-16 17:45:42,776 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 17:45:42,776 
+2016-04-16 17:45:42,776 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 17:45:42,776 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 17:45:42,776 Current IP address:  192.168.1.3
+2016-04-16 17:45:42,776 
+2016-04-16 17:45:42,776 
+2016-04-16 17:45:42,776 Starting ParseCommandLine
+
+2016-04-16 17:45:42,777 Verifying which CLI arguments are selected
+2016-04-16 17:45:42,777 verbose selected
+2016-04-16 17:45:42,777 email to hash function selected
+2016-04-16 17:45:42,777 
+2016-04-16 17:45:42,777 Starting ReadWrite Function
+2016-04-16 17:45:42,777 Creating output file path
+2016-04-16 17:45:42,777 Complete
+
+2016-04-16 17:45:42,777 Reading csv file into DataFrame
+2016-04-16 17:45:43,541 Complete
+
+2016-04-16 17:45:43,541 Storing the shape of the Dataframe
+2016-04-16 17:45:43,541 Complete
+
+2016-04-16 17:45:43,541 Verifying there is only one column
+2016-04-16 17:45:43,541 Failed to read in Client Hash List
+2016-04-16 17:45:43,562 Elapsed Time: 0.7894997596740723 seconds
+2016-04-16 17:45:43,563 
+2016-04-16 17:45:43,563 Program Terminated Normally
+2016-04-16 17:45:43,563 
+2016-04-16 17:48:38,100 
+2016-04-16 17:48:38,100 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-16 17:48:38,100 Starting Dry White Toast
+2016-04-16 17:48:38,100 Version: 1.0.0
+2016-04-16 17:48:38,100 Release Date: April 11, 2016
+
+2016-04-16 17:48:38,101 The license will expire in 76 days
+
+2016-04-16 17:48:38,101 Local host data
+2016-04-16 17:48:38,101 OS flavor:           linux
+2016-04-16 17:48:38,101 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 17:48:38,101 
+2016-04-16 17:48:38,101 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 17:48:38,101 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 17:48:38,101 Current IP address:  192.168.1.3
+2016-04-16 17:48:38,101 
+2016-04-16 17:48:38,101 
+2016-04-16 17:48:38,101 Starting ParseCommandLine
+
+2016-04-16 17:48:38,102 Verifying which CLI arguments are selected
+2016-04-16 17:48:38,102 verbose selected
+2016-04-16 17:48:38,103 email to hash function selected
+2016-04-16 17:48:38,103 
+2016-04-16 17:48:38,103 Starting ReadWrite Function
+2016-04-16 17:48:38,103 Creating output file path
+2016-04-16 17:48:38,103 Complete
+
+2016-04-16 17:48:38,103 Reading csv file into DataFrame
+2016-04-16 17:48:38,872 Complete
+
+2016-04-16 17:48:38,872 Storing the shape of the Dataframe
+2016-04-16 17:48:38,872 Complete
+
+2016-04-16 17:48:38,872 Verifying there is only one column
+2016-04-16 17:48:38,872 More than one column foundNumber of columns = 1
+2016-04-16 17:48:38,893 Elapsed Time: 0.7946722507476807 seconds
+2016-04-16 17:48:38,893 
+2016-04-16 17:48:38,893 Program Terminated Normally
+2016-04-16 17:48:38,893 
+2016-04-16 17:49:10,216 
+2016-04-16 17:49:10,217 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-16 17:49:10,217 Starting Dry White Toast
+2016-04-16 17:49:10,217 Version: 1.0.0
+2016-04-16 17:49:10,217 Release Date: April 11, 2016
+
+2016-04-16 17:49:10,217 The license will expire in 76 days
+
+2016-04-16 17:49:10,217 Local host data
+2016-04-16 17:49:10,217 OS flavor:           linux
+2016-04-16 17:49:10,217 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 17:49:10,217 
+2016-04-16 17:49:10,217 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 17:49:10,217 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 17:49:10,217 Current IP address:  192.168.1.3
+2016-04-16 17:49:10,217 
+2016-04-16 17:49:10,217 
+2016-04-16 17:49:10,217 Starting ParseCommandLine
+
+2016-04-16 17:49:10,218 Verifying which CLI arguments are selected
+2016-04-16 17:49:10,218 verbose selected
+2016-04-16 17:49:10,218 email to hash function selected
+2016-04-16 17:49:10,218 
+2016-04-16 17:49:10,218 Starting ReadWrite Function
+2016-04-16 17:49:10,219 Creating output file path
+2016-04-16 17:49:10,219 Complete
+
+2016-04-16 17:49:10,219 Reading csv file into DataFrame
+2016-04-16 17:49:10,974 Complete
+
+2016-04-16 17:49:10,974 Storing the shape of the Dataframe
+2016-04-16 17:49:10,974 Complete
+
+2016-04-16 17:49:10,974 Verifying there is only one column
+2016-04-16 17:49:10,975 More than one column foundNumber of columns = 1
+2016-04-16 17:49:10,995 Elapsed Time: 0.7804913520812988 seconds
+2016-04-16 17:49:10,995 
+2016-04-16 17:49:10,995 Program Terminated Normally
+2016-04-16 17:49:10,995 
+2016-04-16 17:49:35,245 
+2016-04-16 17:49:35,245 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-16 17:49:35,245 Starting Dry White Toast
+2016-04-16 17:49:35,245 Version: 1.0.0
+2016-04-16 17:49:35,245 Release Date: April 11, 2016
+
+2016-04-16 17:49:35,245 The license will expire in 76 days
+
+2016-04-16 17:49:35,246 Local host data
+2016-04-16 17:49:35,246 OS flavor:           linux
+2016-04-16 17:49:35,246 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 17:49:35,246 
+2016-04-16 17:49:35,246 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 17:49:35,246 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 17:49:35,246 Current IP address:  192.168.1.3
+2016-04-16 17:49:35,246 
+2016-04-16 17:49:35,246 
+2016-04-16 17:49:35,246 Starting ParseCommandLine
+
+2016-04-16 17:49:35,247 Verifying which CLI arguments are selected
+2016-04-16 17:49:35,247 verbose selected
+2016-04-16 17:49:35,247 email to hash function selected
+2016-04-16 17:49:35,247 
+2016-04-16 17:49:35,247 Starting ReadWrite Function
+2016-04-16 17:49:35,247 Creating output file path
+2016-04-16 17:49:35,247 Complete
+
+2016-04-16 17:49:35,247 Reading csv file into DataFrame
+2016-04-16 17:49:35,635 Complete
+
+2016-04-16 17:49:35,636 Storing the shape of the Dataframe
+2016-04-16 17:49:35,636 Complete
+
+2016-04-16 17:49:35,636 Verifying there is only one column
+2016-04-16 17:49:35,636 More than one column foundNumber of columns = 1
+2016-04-16 17:49:35,648 Elapsed Time: 0.40524983406066895 seconds
+2016-04-16 17:49:35,648 
+2016-04-16 17:49:35,649 Program Terminated Normally
+2016-04-16 17:49:35,649 
+2016-04-16 17:50:12,828 
+2016-04-16 17:50:12,828 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/combined.py
+
+2016-04-16 17:50:12,828 Starting Dry White Toast
+2016-04-16 17:50:12,828 Version: 1.0.0
+2016-04-16 17:50:12,828 Release Date: April 11, 2016
+
+2016-04-16 17:50:12,829 The license will expire in 76 days
+
+2016-04-16 17:50:12,829 Local host data
+2016-04-16 17:50:12,829 OS flavor:           linux
+2016-04-16 17:50:12,829 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 17:50:12,829 
+2016-04-16 17:50:12,829 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 17:50:12,829 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 17:50:12,829 Current IP address:  192.168.1.3
+2016-04-16 17:50:12,829 
+2016-04-16 17:50:12,829 
+2016-04-16 17:50:12,829 Starting ParseCommandLine
+
+2016-04-16 17:50:12,830 Verifying which CLI arguments are selected
+2016-04-16 17:50:12,830 verbose selected
+2016-04-16 17:50:12,830 email to hash function selected
+2016-04-16 17:50:12,830 
+2016-04-16 17:50:12,830 Starting ReadWrite Function
+2016-04-16 17:50:12,830 Creating output file path
+2016-04-16 17:50:12,830 Complete
+
+2016-04-16 17:50:12,830 Reading csv file into DataFrame
+2016-04-16 17:50:13,215 Complete
+
+2016-04-16 17:50:13,215 Storing the shape of the Dataframe
+2016-04-16 17:50:13,215 Complete
+
+2016-04-16 17:50:13,216 Verifying there is only one column
+2016-04-16 17:50:13,216 verified
+
+2016-04-16 17:50:13,216 Verifying that all csv rows contain emails
+2016-04-16 17:50:13,485 Verified
+
+2016-04-16 17:50:13,485 Removing all white spaces and making all emails lower cased
+2016-04-16 17:50:13,674 complete
+
+2016-04-16 17:50:13,674 Creating sha512 hash id for each email string
+2016-04-16 17:50:13,676 Failed to read in Client Hash List
+2016-04-16 17:50:13,700 Elapsed Time: 0.873544454574585 seconds
+2016-04-16 17:50:13,700 
+2016-04-16 17:50:13,700 Program Terminated Normally
+2016-04-16 17:50:13,700 
+2016-04-16 18:02:57,977 
+2016-04-16 18:02:57,977 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:02:57,978 Starting Dry White Toast
+2016-04-16 18:02:57,978 Version: 1.0.0
+2016-04-16 18:02:57,978 Release Date: April 11, 2016
+
+2016-04-16 18:02:57,978 The license will expire in 76 days
+
+2016-04-16 18:02:57,978 Local host data
+2016-04-16 18:02:57,978 OS flavor:           linux
+2016-04-16 18:02:57,978 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:02:57,978 
+2016-04-16 18:02:57,978 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:02:57,978 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:02:57,978 Current IP address:  192.168.1.3
+2016-04-16 18:02:57,978 
+2016-04-16 18:02:57,978 
+2016-04-16 18:02:57,978 Starting ParseCommandLine
+
+2016-04-16 18:02:57,979 Verifying which CLI arguments are selected
+2016-04-16 18:02:57,979 verbose selected
+2016-04-16 18:02:57,979 email to hash function selected
+2016-04-16 18:02:57,979 
+2016-04-16 18:02:57,979 Starting ReadWrite Function
+2016-04-16 18:02:57,979 Creating output file path
+2016-04-16 18:02:57,980 Complete
+
+2016-04-16 18:02:57,980 Reading csv file into DataFrame
+2016-04-16 18:02:58,733 Complete
+
+2016-04-16 18:02:58,733 Storing the shape of the Dataframe
+2016-04-16 18:02:58,733 Complete
+
+2016-04-16 18:02:58,733 Verifying there is only one column
+2016-04-16 18:02:58,733 More than one column foundNumber of columns = 1
+2016-04-16 18:02:58,754 Elapsed Time: 0.7789309024810791 seconds
+2016-04-16 18:02:58,754 
+2016-04-16 18:02:58,754 Program Terminated Normally
+2016-04-16 18:02:58,754 
+2016-04-16 18:03:11,277 
+2016-04-16 18:03:11,277 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:03:11,277 Starting Dry White Toast
+2016-04-16 18:03:11,277 Version: 1.0.0
+2016-04-16 18:03:11,277 Release Date: April 11, 2016
+
+2016-04-16 18:03:11,277 The license will expire in 76 days
+
+2016-04-16 18:03:11,277 Local host data
+2016-04-16 18:03:11,277 OS flavor:           linux
+2016-04-16 18:03:11,277 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:03:11,277 
+2016-04-16 18:03:11,277 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:03:11,277 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:03:11,277 Current IP address:  192.168.1.3
+2016-04-16 18:03:11,277 
+2016-04-16 18:03:11,278 
+2016-04-16 18:03:11,278 Starting ParseCommandLine
+
+2016-04-16 18:03:11,279 Verifying which CLI arguments are selected
+2016-04-16 18:03:11,279 verbose selected
+2016-04-16 18:03:11,279 email to hash function selected
+2016-04-16 18:03:11,279 
+2016-04-16 18:03:11,279 Starting ReadWrite Function
+2016-04-16 18:03:11,279 Creating output file path
+2016-04-16 18:03:11,279 Complete
+
+2016-04-16 18:03:11,279 Reading csv file into DataFrame
+2016-04-16 18:03:12,025 Complete
+
+2016-04-16 18:03:12,025 Storing the shape of the Dataframe
+2016-04-16 18:03:12,025 Complete
+
+2016-04-16 18:03:12,026 Verifying there is only one column
+2016-04-16 18:03:12,026 More than one column foundNumber of columns = 1
+2016-04-16 18:03:12,046 Elapsed Time: 0.7713921070098877 seconds
+2016-04-16 18:03:12,046 
+2016-04-16 18:03:12,046 Program Terminated Normally
+2016-04-16 18:03:12,046 
+2016-04-16 18:05:08,727 
+2016-04-16 18:05:08,727 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:05:08,727 Starting Dry White Toast
+2016-04-16 18:05:08,727 Version: 1.0.0
+2016-04-16 18:05:08,727 Release Date: April 11, 2016
+
+2016-04-16 18:05:08,728 The license will expire in 76 days
+
+2016-04-16 18:05:08,728 Local host data
+2016-04-16 18:05:08,728 OS flavor:           linux
+2016-04-16 18:05:08,728 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:05:08,728 
+2016-04-16 18:05:08,728 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:05:08,728 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:05:08,728 Current IP address:  192.168.1.3
+2016-04-16 18:05:08,728 
+2016-04-16 18:05:08,728 
+2016-04-16 18:05:08,728 Starting ParseCommandLine
+
+2016-04-16 18:05:08,729 Verifying which CLI arguments are selected
+2016-04-16 18:05:08,729 verbose selected
+2016-04-16 18:05:08,729 email to hash function selected
+2016-04-16 18:05:08,729 
+2016-04-16 18:05:08,729 Starting ReadWrite Function
+2016-04-16 18:05:08,729 Creating output file path
+2016-04-16 18:05:08,729 Complete
+
+2016-04-16 18:05:08,729 Reading csv file into DataFrame
+2016-04-16 18:05:09,480 Complete
+
+2016-04-16 18:05:09,480 Storing the shape of the Dataframe
+2016-04-16 18:05:09,480 Complete
+
+2016-04-16 18:05:09,480 Verifying there is only one column
+2016-04-16 18:05:09,480 verified
+
+2016-04-16 18:05:09,480 Verifying that all csv rows contain emails
+2016-04-16 18:05:10,013 1000000 emails found in 1000001 rows
+
+2016-04-16 18:05:10,013 Selecting only rows with emails
+2016-04-16 18:05:10,784 complete
+
+2016-04-16 18:05:10,784 Removing all white spaces and making all emails lower cased
+2016-04-16 18:05:11,152 complete
+
+2016-04-16 18:05:11,152 Creating sha512 hash id for each email string
+2016-04-16 18:05:11,156 Failed to read in Client Hash List
+2016-04-16 18:05:11,198 Elapsed Time: 2.4725630283355713 seconds
+2016-04-16 18:05:11,198 
+2016-04-16 18:05:11,198 Program Terminated Normally
+2016-04-16 18:05:11,198 
+2016-04-16 18:06:33,277 
+2016-04-16 18:06:33,277 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:06:33,277 Starting Dry White Toast
+2016-04-16 18:06:33,278 Version: 1.0.0
+2016-04-16 18:06:33,278 Release Date: April 11, 2016
+
+2016-04-16 18:06:33,278 The license will expire in 76 days
+
+2016-04-16 18:06:33,278 Local host data
+2016-04-16 18:06:33,278 OS flavor:           linux
+2016-04-16 18:06:33,278 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:06:33,278 
+2016-04-16 18:06:33,278 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:06:33,278 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:06:33,278 Current IP address:  192.168.1.3
+2016-04-16 18:06:33,278 
+2016-04-16 18:06:33,278 
+2016-04-16 18:06:33,278 Starting ParseCommandLine
+
+2016-04-16 18:06:33,280 Verifying which CLI arguments are selected
+2016-04-16 18:06:33,280 verbose selected
+2016-04-16 18:06:33,280 email to hash function selected
+2016-04-16 18:06:33,280 
+2016-04-16 18:06:33,280 Starting ReadWrite Function
+2016-04-16 18:06:33,281 Creating output file path
+2016-04-16 18:06:33,281 Complete
+
+2016-04-16 18:06:33,281 Reading csv file into DataFrame
+2016-04-16 18:06:34,026 Complete
+
+2016-04-16 18:06:34,027 Storing the shape of the Dataframe
+2016-04-16 18:06:34,027 Complete
+
+2016-04-16 18:06:34,027 Verifying there is only one column
+2016-04-16 18:06:34,027 verified
+
+2016-04-16 18:06:34,027 Verifying that all csv rows contain emails
+2016-04-16 18:06:34,565 1000000 emails found in 1000001 rows
+
+2016-04-16 18:06:34,565 Selecting only rows with emails
+2016-04-16 18:06:35,341 complete
+
+2016-04-16 18:06:35,341 Removing all white spaces and making all emails lower cased
+2016-04-16 18:06:35,707 complete
+
+2016-04-16 18:06:35,707 Creating sha512 hash id for each email string
+2016-04-16 18:06:35,712 Failed to read in Client Hash List
+2016-04-16 18:06:35,754 Elapsed Time: 2.4798967838287354 seconds
+2016-04-16 18:06:35,755 
+2016-04-16 18:06:35,755 Program Terminated Normally
+2016-04-16 18:06:35,755 
+2016-04-16 18:07:31,442 
+2016-04-16 18:07:31,442 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:07:31,443 Starting Dry White Toast
+2016-04-16 18:07:31,443 Version: 1.0.0
+2016-04-16 18:07:31,443 Release Date: April 11, 2016
+
+2016-04-16 18:07:31,443 The license will expire in 76 days
+
+2016-04-16 18:07:31,443 Local host data
+2016-04-16 18:07:31,444 OS flavor:           linux
+2016-04-16 18:07:31,444 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:07:31,444 
+2016-04-16 18:07:31,444 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:07:31,444 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:07:31,444 Current IP address:  192.168.1.3
+2016-04-16 18:07:31,444 
+2016-04-16 18:07:31,444 
+2016-04-16 18:07:31,444 Starting ParseCommandLine
+
+2016-04-16 18:07:31,447 Verifying which CLI arguments are selected
+2016-04-16 18:07:31,447 verbose selected
+2016-04-16 18:07:31,447 email to hash function selected
+2016-04-16 18:07:31,447 
+2016-04-16 18:07:31,447 Starting ReadWrite Function
+2016-04-16 18:07:31,447 Creating output file path
+2016-04-16 18:07:31,447 Complete
+
+2016-04-16 18:07:31,447 Reading csv file into DataFrame
+2016-04-16 18:07:32,205 Complete
+
+2016-04-16 18:07:32,205 Storing the shape of the Dataframe
+2016-04-16 18:07:32,206 Complete
+
+2016-04-16 18:07:32,206 Verifying there is only one column
+2016-04-16 18:07:32,206 verified
+
+2016-04-16 18:07:32,206 Verifying that all csv rows contain emails
+2016-04-16 18:07:32,744 1000000 emails found in 1000001 rows
+
+2016-04-16 18:07:32,744 Selecting only rows with emails
+2016-04-16 18:07:33,527 complete
+
+2016-04-16 18:07:33,527 Removing all white spaces and making all emails lower cased
+2016-04-16 18:07:33,890 complete
+
+2016-04-16 18:07:33,890 Creating sha512 hash id for each email string
+2016-04-16 18:07:33,895 Failed to read in Client Hash List
+2016-04-16 18:07:33,937 Elapsed Time: 2.497340202331543 seconds
+2016-04-16 18:07:33,938 
+2016-04-16 18:07:33,938 Program Terminated Normally
+2016-04-16 18:07:33,938 
+2016-04-16 18:10:14,026 
+2016-04-16 18:10:14,026 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:10:14,026 Starting Dry White Toast
+2016-04-16 18:10:14,026 Version: 1.0.0
+2016-04-16 18:10:14,026 Release Date: April 11, 2016
+
+2016-04-16 18:10:14,026 The license will expire in 76 days
+
+2016-04-16 18:10:14,026 Local host data
+2016-04-16 18:10:14,026 OS flavor:           linux
+2016-04-16 18:10:14,026 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:10:14,026 
+2016-04-16 18:10:14,026 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:10:14,027 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:10:14,027 Current IP address:  192.168.1.3
+2016-04-16 18:10:14,027 
+2016-04-16 18:10:14,027 
+2016-04-16 18:10:14,027 Starting ParseCommandLine
+
+2016-04-16 18:10:14,028 Verifying which CLI arguments are selected
+2016-04-16 18:10:14,028 verbose selected
+2016-04-16 18:10:14,028 email to hash function selected
+2016-04-16 18:10:14,028 
+2016-04-16 18:10:14,028 Starting ReadWrite Function
+2016-04-16 18:10:14,028 Creating output file path
+2016-04-16 18:10:14,028 Complete
+
+2016-04-16 18:10:14,028 Reading csv file into DataFrame
+2016-04-16 18:10:14,772 Complete
+
+2016-04-16 18:10:14,772 Storing the shape of the Dataframe
+2016-04-16 18:10:14,772 Complete
+
+2016-04-16 18:10:14,772 Verifying there is only one column
+2016-04-16 18:10:14,773 verified
+
+2016-04-16 18:10:14,773 Verifying that all csv rows contain emails
+2016-04-16 18:10:15,305 1000000 emails found in 1000001 rows
+
+2016-04-16 18:10:15,305 Selecting only rows with emails
+2016-04-16 18:10:16,088 complete
+
+2016-04-16 18:10:16,088 Removing all white spaces and making all emails lower cased
+2016-04-16 18:10:16,447 complete
+
+2016-04-16 18:10:16,447 Creating sha512 hash id for each email string
+2016-04-16 18:10:16,453 Failed to read in Client Hash List
+2016-04-16 18:10:16,498 Elapsed Time: 2.473870038986206 seconds
+2016-04-16 18:10:16,498 
+2016-04-16 18:10:16,498 Program Terminated Normally
+2016-04-16 18:10:16,498 
+2016-04-16 18:13:29,392 
+2016-04-16 18:13:29,392 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:13:29,392 Starting Dry White Toast
+2016-04-16 18:13:29,392 Version: 1.0.0
+2016-04-16 18:13:29,393 Release Date: April 11, 2016
+
+2016-04-16 18:13:29,393 The license will expire in 76 days
+
+2016-04-16 18:13:29,393 Local host data
+2016-04-16 18:13:29,393 OS flavor:           linux
+2016-04-16 18:13:29,393 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:13:29,393 
+2016-04-16 18:13:29,393 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:13:29,393 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:13:29,393 Current IP address:  192.168.1.3
+2016-04-16 18:13:29,393 
+2016-04-16 18:13:29,393 
+2016-04-16 18:13:29,393 Starting ParseCommandLine
+
+2016-04-16 18:13:29,394 Verifying which CLI arguments are selected
+2016-04-16 18:13:29,394 verbose selected
+2016-04-16 18:13:29,394 email to hash function selected
+2016-04-16 18:13:29,394 
+2016-04-16 18:13:29,394 Starting ReadWrite Function
+2016-04-16 18:13:29,394 Creating output file path
+2016-04-16 18:13:29,394 Complete
+
+2016-04-16 18:13:29,394 Reading csv file into DataFrame
+2016-04-16 18:13:30,132 Complete
+
+2016-04-16 18:13:30,133 Storing the shape of the Dataframe
+2016-04-16 18:13:30,133 Complete
+
+2016-04-16 18:13:30,133 Verifying there is only one column
+2016-04-16 18:13:30,133 verified
+
+2016-04-16 18:13:30,133 Verifying that all csv rows contain emails
+2016-04-16 18:13:30,658 1000000 emails found in 1000001 rows
+
+2016-04-16 18:13:30,658 Selecting only rows with emails
+2016-04-16 18:13:31,430 complete
+
+2016-04-16 18:13:31,430 Removing all white spaces and making all emails lower cased
+2016-04-16 18:13:31,789 complete
+
+2016-04-16 18:13:31,789 Creating sha512 hash id for each email string
+2016-04-16 18:13:31,794 Failed to read in Client Hash List
+2016-04-16 18:13:31,843 Elapsed Time: 2.4528110027313232 seconds
+2016-04-16 18:13:31,843 
+2016-04-16 18:13:31,843 Program Terminated Normally
+2016-04-16 18:13:31,843 
+2016-04-16 18:13:58,351 
+2016-04-16 18:13:58,351 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:13:58,351 Starting Dry White Toast
+2016-04-16 18:13:58,351 Version: 1.0.0
+2016-04-16 18:13:58,351 Release Date: April 11, 2016
+
+2016-04-16 18:13:58,351 The license will expire in 76 days
+
+2016-04-16 18:13:58,351 Local host data
+2016-04-16 18:13:58,351 OS flavor:           linux
+2016-04-16 18:13:58,351 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:13:58,351 
+2016-04-16 18:13:58,351 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:13:58,351 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:13:58,351 Current IP address:  192.168.1.3
+2016-04-16 18:13:58,351 
+2016-04-16 18:13:58,351 
+2016-04-16 18:13:58,351 Starting ParseCommandLine
+
+2016-04-16 18:13:58,353 Verifying which CLI arguments are selected
+2016-04-16 18:13:58,353 verbose selected
+2016-04-16 18:13:58,353 email to hash function selected
+2016-04-16 18:13:58,353 
+2016-04-16 18:13:58,353 Starting ReadWrite Function
+2016-04-16 18:13:58,353 Creating output file path
+2016-04-16 18:13:58,353 Complete
+
+2016-04-16 18:13:58,353 Reading csv file into DataFrame
+2016-04-16 18:13:58,739 Complete
+
+2016-04-16 18:13:58,740 Storing the shape of the Dataframe
+2016-04-16 18:13:58,740 Complete
+
+2016-04-16 18:13:58,740 Verifying there is only one column
+2016-04-16 18:13:58,740 verified
+
+2016-04-16 18:13:58,740 Verifying that all csv rows contain emails
+2016-04-16 18:13:59,013 Verified
+
+2016-04-16 18:13:59,013 Removing all white spaces and making all emails lower cased
+2016-04-16 18:13:59,193 complete
+
+2016-04-16 18:13:59,194 Creating sha512 hash id for each email string
+2016-04-16 18:13:59,196 Failed to read in Client Hash List
+2016-04-16 18:13:59,222 Elapsed Time: 0.8727774620056152 seconds
+2016-04-16 18:13:59,222 
+2016-04-16 18:13:59,222 Program Terminated Normally
+2016-04-16 18:13:59,222 
+2016-04-16 18:17:02,977 
+2016-04-16 18:17:02,977 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:17:02,977 Starting Dry White Toast
+2016-04-16 18:17:02,977 Version: 1.0.0
+2016-04-16 18:17:02,977 Release Date: April 11, 2016
+
+2016-04-16 18:17:02,977 The license will expire in 76 days
+
+2016-04-16 18:17:02,977 Local host data
+2016-04-16 18:17:02,977 OS flavor:           linux
+2016-04-16 18:17:02,978 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:17:02,978 
+2016-04-16 18:17:02,978 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:17:02,978 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:17:02,978 Current IP address:  192.168.1.3
+2016-04-16 18:17:02,978 
+2016-04-16 18:17:02,978 
+2016-04-16 18:17:02,978 Starting ParseCommandLine
+
+2016-04-16 18:17:02,979 Verifying which CLI arguments are selected
+2016-04-16 18:17:02,979 verbose selected
+2016-04-16 18:17:02,979 email to hash function selected
+2016-04-16 18:17:02,979 
+2016-04-16 18:17:02,979 Starting ReadWrite Function
+2016-04-16 18:17:02,979 Creating output file path
+2016-04-16 18:17:02,979 Complete
+
+2016-04-16 18:17:02,979 Reading csv file into DataFrame
+2016-04-16 18:17:03,358 Complete
+
+2016-04-16 18:17:03,358 Storing the shape of the Dataframe
+2016-04-16 18:17:03,358 Complete
+
+2016-04-16 18:17:03,358 Verifying there is only one column
+2016-04-16 18:17:03,358 verified
+
+2016-04-16 18:17:03,358 Verifying that all csv rows contain emails
+2016-04-16 18:17:03,647 Verified
+
+2016-04-16 18:17:03,648 Removing all white spaces and making all emails lower cased
+2016-04-16 18:17:03,828 complete
+
+2016-04-16 18:17:03,829 Creating sha512 hash id for each email string
+2016-04-16 18:17:03,831 Failed to read in Client Hash List
+2016-04-16 18:17:03,850 Elapsed Time: 0.8745770454406738 seconds
+2016-04-16 18:17:03,850 
+2016-04-16 18:17:03,850 Program Terminated Normally
+2016-04-16 18:17:03,850 
+2016-04-16 18:19:26,360 
+2016-04-16 18:19:26,360 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:19:26,360 Starting Dry White Toast
+2016-04-16 18:19:26,360 Version: 1.0.0
+2016-04-16 18:19:26,361 Release Date: April 11, 2016
+
+2016-04-16 18:19:26,361 The license will expire in 76 days
+
+2016-04-16 18:19:26,361 Local host data
+2016-04-16 18:19:26,361 OS flavor:           linux
+2016-04-16 18:19:26,361 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:19:26,361 
+2016-04-16 18:19:26,361 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:19:26,361 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:19:26,361 Current IP address:  192.168.1.3
+2016-04-16 18:19:26,361 
+2016-04-16 18:19:26,361 
+2016-04-16 18:19:26,361 Starting ParseCommandLine
+
+2016-04-16 18:19:26,362 Verifying which CLI arguments are selected
+2016-04-16 18:19:26,362 verbose selected
+2016-04-16 18:19:26,362 email to hash function selected
+2016-04-16 18:19:26,362 
+2016-04-16 18:19:26,362 Starting ReadWrite Function
+2016-04-16 18:19:26,362 Creating output file path
+2016-04-16 18:19:26,362 Complete
+
+2016-04-16 18:19:26,362 Reading csv file into DataFrame
+2016-04-16 18:19:26,736 Complete
+
+2016-04-16 18:19:26,736 Storing the shape of the Dataframe
+2016-04-16 18:19:26,736 Complete
+
+2016-04-16 18:19:26,737 Verifying there is only one column
+2016-04-16 18:19:26,737 verified
+
+2016-04-16 18:19:26,737 Verifying that all csv rows contain emails
+2016-04-16 18:19:27,014 Verified
+
+2016-04-16 18:19:27,014 Removing all white spaces and making all emails lower cased
+2016-04-16 18:19:27,197 complete
+
+2016-04-16 18:19:27,197 Creating sha512 hash id for each email string
+2016-04-16 18:19:27,200 Failed to read in Client Hash List
+2016-04-16 18:19:27,218 Elapsed Time: 0.8597877025604248 seconds
+2016-04-16 18:19:27,218 
+2016-04-16 18:19:27,218 Program Terminated Normally
+2016-04-16 18:19:27,218 
+2016-04-16 18:19:44,712 
+2016-04-16 18:19:44,712 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:19:44,712 Starting Dry White Toast
+2016-04-16 18:19:44,712 Version: 1.0.0
+2016-04-16 18:19:44,712 Release Date: April 11, 2016
+
+2016-04-16 18:19:44,712 The license will expire in 76 days
+
+2016-04-16 18:19:44,712 Local host data
+2016-04-16 18:19:44,712 OS flavor:           linux
+2016-04-16 18:19:44,712 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:19:44,712 
+2016-04-16 18:19:44,712 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:19:44,712 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:19:44,712 Current IP address:  192.168.1.3
+2016-04-16 18:19:44,712 
+2016-04-16 18:19:44,712 
+2016-04-16 18:19:44,713 Starting ParseCommandLine
+
+2016-04-16 18:19:44,714 Verifying which CLI arguments are selected
+2016-04-16 18:19:44,714 verbose selected
+2016-04-16 18:19:44,714 email to hash function selected
+2016-04-16 18:19:44,714 
+2016-04-16 18:19:44,714 Starting ReadWrite Function
+2016-04-16 18:19:44,714 Creating output file path
+2016-04-16 18:19:44,714 Complete
+
+2016-04-16 18:19:44,714 Reading csv file into DataFrame
+2016-04-16 18:19:45,464 Complete
+
+2016-04-16 18:19:45,464 Storing the shape of the Dataframe
+2016-04-16 18:19:45,464 Complete
+
+2016-04-16 18:19:45,464 Verifying there is only one column
+2016-04-16 18:19:45,465 verified
+
+2016-04-16 18:19:45,465 Verifying that all csv rows contain emails
+2016-04-16 18:19:45,996 1000000 emails found in 1000001 rows
+
+2016-04-16 18:19:45,996 Selecting only rows with emails
+2016-04-16 18:19:46,810 Elapsed Time: 2.100557804107666 seconds
+2016-04-16 18:19:46,810 
+2016-04-16 18:19:46,810 Program Terminated Normally
+2016-04-16 18:19:46,811 
+2016-04-16 18:21:40,341 
+2016-04-16 18:21:40,341 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:21:40,341 Starting Dry White Toast
+2016-04-16 18:21:40,341 Version: 1.0.0
+2016-04-16 18:21:40,341 Release Date: April 11, 2016
+
+2016-04-16 18:21:40,341 The license will expire in 76 days
+
+2016-04-16 18:21:40,341 Local host data
+2016-04-16 18:21:40,341 OS flavor:           linux
+2016-04-16 18:21:40,341 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:21:40,341 
+2016-04-16 18:21:40,341 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:21:40,341 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:21:40,341 Current IP address:  192.168.1.3
+2016-04-16 18:21:40,341 
+2016-04-16 18:21:40,341 
+2016-04-16 18:21:40,341 Starting ParseCommandLine
+
+2016-04-16 18:21:40,343 Verifying which CLI arguments are selected
+2016-04-16 18:21:40,343 verbose selected
+2016-04-16 18:21:40,343 email to hash function selected
+2016-04-16 18:21:40,343 
+2016-04-16 18:21:40,343 Starting ReadWrite Function
+2016-04-16 18:21:40,343 Creating output file path
+2016-04-16 18:21:40,343 Complete
+
+2016-04-16 18:21:40,343 Reading csv file into DataFrame
+2016-04-16 18:21:41,098 Complete
+
+2016-04-16 18:21:41,098 Storing the shape of the Dataframe
+2016-04-16 18:21:41,099 Complete
+
+2016-04-16 18:21:41,099 Verifying there is only one column
+2016-04-16 18:21:41,099 verified
+
+2016-04-16 18:21:41,099 Verifying that all csv rows contain emails
+2016-04-16 18:21:41,639 1000000 emails found in 1000001 rows
+
+2016-04-16 18:21:41,639 Selecting only rows with emails
+2016-04-16 18:21:42,430 complete
+
+2016-04-16 18:21:42,430 Removing all white spaces and making all emails lower cased
+2016-04-16 18:21:42,845 Elapsed Time: 2.5062880516052246 seconds
+2016-04-16 18:21:42,845 
+2016-04-16 18:21:42,845 Program Terminated Normally
+2016-04-16 18:21:42,845 
+2016-04-16 18:23:03,795 
+2016-04-16 18:23:03,795 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:23:03,795 Starting Dry White Toast
+2016-04-16 18:23:03,795 Version: 1.0.0
+2016-04-16 18:23:03,795 Release Date: April 11, 2016
+
+2016-04-16 18:23:03,795 The license will expire in 76 days
+
+2016-04-16 18:23:03,795 Local host data
+2016-04-16 18:23:03,795 OS flavor:           linux
+2016-04-16 18:23:03,795 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:23:03,795 
+2016-04-16 18:23:03,795 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:23:03,795 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:23:03,795 Current IP address:  192.168.1.3
+2016-04-16 18:23:03,795 
+2016-04-16 18:23:03,796 
+2016-04-16 18:23:03,796 Starting ParseCommandLine
+
+2016-04-16 18:23:03,797 Verifying which CLI arguments are selected
+2016-04-16 18:23:03,797 verbose selected
+2016-04-16 18:23:03,797 email to hash function selected
+2016-04-16 18:23:03,797 
+2016-04-16 18:23:03,797 Starting ReadWrite Function
+2016-04-16 18:23:03,797 Creating output file path
+2016-04-16 18:23:03,797 Complete
+
+2016-04-16 18:23:03,797 Reading csv file into DataFrame
+2016-04-16 18:23:04,594 Complete
+
+2016-04-16 18:23:04,594 Storing the shape of the Dataframe
+2016-04-16 18:23:04,594 Complete
+
+2016-04-16 18:23:04,594 Verifying there is only one column
+2016-04-16 18:23:04,594 verified
+
+2016-04-16 18:23:04,594 Verifying that all csv rows contain emails
+2016-04-16 18:23:05,130 1000000 emails found in 1000001 rows
+
+2016-04-16 18:23:05,130 Selecting only rows with emails
+2016-04-16 18:23:05,919 complete
+
+2016-04-16 18:23:05,919 Removing all white spaces and making all emails lower cased
+2016-04-16 18:23:06,281 complete
+
+2016-04-16 18:23:06,281 Creating sha512 hash id for each email string
+2016-04-16 18:23:06,286 Failed to read in Client Hash List
+2016-04-16 18:23:06,328 Elapsed Time: 2.535599708557129 seconds
+2016-04-16 18:23:06,329 
+2016-04-16 18:23:06,329 Program Terminated Normally
+2016-04-16 18:23:06,329 
+2016-04-16 18:26:08,344 
+2016-04-16 18:26:08,344 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:26:08,344 Starting Dry White Toast
+2016-04-16 18:26:08,344 Version: 1.0.0
+2016-04-16 18:26:08,344 Release Date: April 11, 2016
+
+2016-04-16 18:26:08,344 The license will expire in 76 days
+
+2016-04-16 18:26:08,344 Local host data
+2016-04-16 18:26:08,344 OS flavor:           linux
+2016-04-16 18:26:08,344 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:26:08,344 
+2016-04-16 18:26:08,344 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:26:08,344 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:26:08,344 Current IP address:  192.168.1.3
+2016-04-16 18:26:08,344 
+2016-04-16 18:26:08,344 
+2016-04-16 18:26:08,345 Starting ParseCommandLine
+
+2016-04-16 18:26:08,346 Verifying which CLI arguments are selected
+2016-04-16 18:26:08,346 email to hash function selected
+2016-04-16 18:26:08,346 
+2016-04-16 18:26:08,346 Starting ReadWrite Function
+2016-04-16 18:26:08,346 Creating output file path
+2016-04-16 18:26:08,346 Complete
+
+2016-04-16 18:26:08,346 Reading csv file into DataFrame
+2016-04-16 18:26:09,110 Complete
+
+2016-04-16 18:26:09,111 Storing the shape of the Dataframe
+2016-04-16 18:26:09,111 Complete
+
+2016-04-16 18:26:09,111 Verifying there is only one column
+2016-04-16 18:26:09,111 verified
+
+2016-04-16 18:26:09,111 Verifying that all csv rows contain emails
+2016-04-16 18:26:09,660 1000000 emails found in 1000001 rows
+
+2016-04-16 18:26:09,660 Selecting only rows with emails
+2016-04-16 18:26:10,451 complete
+
+2016-04-16 18:26:10,452 Removing all white spaces and making all emails lower cased
+2016-04-16 18:26:10,812 complete
+
+2016-04-16 18:26:10,812 Creating sha512 hash id for each email string
+2016-04-16 18:26:10,817 Failed to read in Client Hash List
+2016-04-16 18:26:10,858 Elapsed Time: 2.516402006149292 seconds
+2016-04-16 18:26:10,858 
+2016-04-16 18:26:10,858 Program Terminated Normally
+2016-04-16 18:26:10,858 
+2016-04-16 18:28:09,931 
+2016-04-16 18:28:09,931 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:28:09,931 Starting Dry White Toast
+2016-04-16 18:28:09,931 Version: 1.0.0
+2016-04-16 18:28:09,931 Release Date: April 11, 2016
+
+2016-04-16 18:28:09,931 The license will expire in 76 days
+
+2016-04-16 18:28:09,931 Local host data
+2016-04-16 18:28:09,931 OS flavor:           linux
+2016-04-16 18:28:09,931 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:28:09,931 
+2016-04-16 18:28:09,931 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:28:09,931 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:28:09,931 Current IP address:  192.168.1.3
+2016-04-16 18:28:09,931 
+2016-04-16 18:28:09,931 
+2016-04-16 18:28:09,932 Starting ParseCommandLine
+
+2016-04-16 18:28:09,933 Verifying which CLI arguments are selected
+2016-04-16 18:28:09,933 email to hash function selected
+2016-04-16 18:28:09,933 
+2016-04-16 18:28:09,933 Starting ReadWrite Function
+2016-04-16 18:28:09,933 Creating output file path
+2016-04-16 18:28:09,933 Complete
+
+2016-04-16 18:28:09,933 Reading csv file into DataFrame
+2016-04-16 18:28:10,684 Complete
+
+2016-04-16 18:28:10,684 Storing the shape of the Dataframe
+2016-04-16 18:28:10,684 Complete
+
+2016-04-16 18:28:10,684 Verifying there is only one column
+2016-04-16 18:28:10,685 verified
+
+2016-04-16 18:28:10,685 Verifying that all csv rows contain emails
+2016-04-16 18:28:11,212 1000000 emails found in 1000001 rows
+
+2016-04-16 18:28:11,212 Selecting only rows with emails
+2016-04-16 18:28:11,986 complete
+
+2016-04-16 18:28:11,986 Removing all white spaces and making all emails lower cased
+2016-04-16 18:28:12,345 complete
+
+2016-04-16 18:28:12,345 Creating sha512 hash id for each email string
+2016-04-16 18:28:12,413 Elapsed Time: 2.483837842941284 seconds
+2016-04-16 18:28:12,413 
+2016-04-16 18:28:12,413 Program Terminated Normally
+2016-04-16 18:28:12,413 
+2016-04-16 18:29:54,784 
+2016-04-16 18:29:54,784 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:29:54,784 Starting Dry White Toast
+2016-04-16 18:29:54,784 Version: 1.0.0
+2016-04-16 18:29:54,785 Release Date: April 11, 2016
+
+2016-04-16 18:29:54,785 The license will expire in 76 days
+
+2016-04-16 18:29:54,785 Local host data
+2016-04-16 18:29:54,785 OS flavor:           linux
+2016-04-16 18:29:54,785 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:29:54,785 
+2016-04-16 18:29:54,785 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:29:54,785 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:29:54,785 Current IP address:  192.168.1.3
+2016-04-16 18:29:54,785 
+2016-04-16 18:29:54,785 
+2016-04-16 18:29:54,785 Starting ParseCommandLine
+
+2016-04-16 18:29:54,786 Verifying which CLI arguments are selected
+2016-04-16 18:29:54,786 verbose selected
+2016-04-16 18:29:54,786 email to hash function selected
+2016-04-16 18:29:54,786 
+2016-04-16 18:29:54,786 Starting ReadWrite Function
+2016-04-16 18:29:54,786 Creating output file path
+2016-04-16 18:29:54,786 Complete
+
+2016-04-16 18:29:54,786 Reading csv file into DataFrame
+2016-04-16 18:29:55,543 Complete
+
+2016-04-16 18:29:55,543 Storing the shape of the Dataframe
+2016-04-16 18:29:55,543 Complete
+
+2016-04-16 18:29:55,543 Verifying there is only one column
+2016-04-16 18:29:55,543 verified
+
+2016-04-16 18:29:55,543 Verifying that all csv rows contain emails
+2016-04-16 18:29:56,088 1000000 emails found in 1000001 rows
+
+2016-04-16 18:29:56,088 Selecting only rows with emails
+2016-04-16 18:29:56,867 complete
+
+2016-04-16 18:29:56,867 Removing all white spaces and making all emails lower cased
+2016-04-16 18:29:57,229 complete
+
+2016-04-16 18:29:57,229 Creating sha512 hash id for each email string
+2016-04-16 18:29:57,244 Failed to read in Client Hash List
+2016-04-16 18:29:57,298 Elapsed Time: 2.516010046005249 seconds
+2016-04-16 18:29:57,298 
+2016-04-16 18:29:57,298 Program Terminated Normally
+2016-04-16 18:29:57,298 
+2016-04-16 18:32:57,829 
+2016-04-16 18:32:57,830 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:32:57,830 Starting Dry White Toast
+2016-04-16 18:32:57,830 Version: 1.0.0
+2016-04-16 18:32:57,830 Release Date: April 11, 2016
+
+2016-04-16 18:32:57,830 The license will expire in 76 days
+
+2016-04-16 18:32:57,830 Local host data
+2016-04-16 18:32:57,830 OS flavor:           linux
+2016-04-16 18:32:57,830 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:32:57,830 
+2016-04-16 18:32:57,830 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:32:57,830 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:32:57,830 Current IP address:  192.168.1.3
+2016-04-16 18:32:57,830 
+2016-04-16 18:32:57,830 
+2016-04-16 18:32:57,830 Starting ParseCommandLine
+
+2016-04-16 18:32:57,831 Verifying which CLI arguments are selected
+2016-04-16 18:32:57,831 verbose selected
+2016-04-16 18:32:57,832 email to hash function selected
+2016-04-16 18:32:57,832 
+2016-04-16 18:32:57,832 Starting ReadWrite Function
+2016-04-16 18:32:57,832 Creating output file path
+2016-04-16 18:32:57,832 Complete
+
+2016-04-16 18:32:57,832 Reading csv file into DataFrame
+2016-04-16 18:32:58,579 Complete
+
+2016-04-16 18:32:58,579 Storing the shape of the Dataframe
+2016-04-16 18:32:58,579 Complete
+
+2016-04-16 18:32:58,579 Verifying there is only one column
+2016-04-16 18:32:58,579 verified
+
+2016-04-16 18:32:58,579 Verifying that all csv rows contain emails
+2016-04-16 18:32:59,115 1000000 emails found in 1000001 rows
+
+2016-04-16 18:32:59,116 Selecting only rows with emails
+2016-04-16 18:32:59,892 complete
+
+2016-04-16 18:32:59,892 Removing all white spaces and making all emails lower cased
+2016-04-16 18:33:00,256 complete
+
+2016-04-16 18:33:00,257 Creating sha512 hash id for each email string
+2016-04-16 18:33:00,271 Failed to read in Client Hash List
+2016-04-16 18:33:00,325 Elapsed Time: 2.500319480895996 seconds
+2016-04-16 18:33:00,326 
+2016-04-16 18:33:00,326 Program Terminated Normally
+2016-04-16 18:33:00,326 
+2016-04-16 18:33:34,832 
+2016-04-16 18:33:34,832 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:33:34,832 Starting Dry White Toast
+2016-04-16 18:33:34,832 Version: 1.0.0
+2016-04-16 18:33:34,832 Release Date: April 11, 2016
+
+2016-04-16 18:33:34,832 The license will expire in 76 days
+
+2016-04-16 18:33:34,832 Local host data
+2016-04-16 18:33:34,832 OS flavor:           linux
+2016-04-16 18:33:34,832 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:33:34,832 
+2016-04-16 18:33:34,833 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:33:34,833 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:33:34,833 Current IP address:  192.168.1.3
+2016-04-16 18:33:34,833 
+2016-04-16 18:33:34,833 
+2016-04-16 18:33:34,833 Starting ParseCommandLine
+
+2016-04-16 18:33:34,834 Verifying which CLI arguments are selected
+2016-04-16 18:33:34,834 verbose selected
+2016-04-16 18:33:34,834 email to hash function selected
+2016-04-16 18:33:34,834 
+2016-04-16 18:33:34,834 Starting ReadWrite Function
+2016-04-16 18:33:34,834 Creating output file path
+2016-04-16 18:33:34,834 Complete
+
+2016-04-16 18:33:34,834 Reading csv file into DataFrame
+2016-04-16 18:33:35,601 Complete
+
+2016-04-16 18:33:35,601 Storing the shape of the Dataframe
+2016-04-16 18:33:35,602 Complete
+
+2016-04-16 18:33:35,602 Verifying there is only one column
+2016-04-16 18:33:35,602 verified
+
+2016-04-16 18:33:35,602 Verifying that all csv rows contain emails
+2016-04-16 18:33:36,138 1000000 emails found in 1000001 rows
+
+2016-04-16 18:33:36,138 Selecting only rows with emails
+2016-04-16 18:33:36,919 complete
+
+2016-04-16 18:33:36,920 Removing all white spaces and making all emails lower cased
+2016-04-16 18:33:37,283 complete
+
+2016-04-16 18:33:37,283 Creating sha512 hash id for each email string
+2016-04-16 18:33:37,299 Failed to read in Client Hash List
+2016-04-16 18:33:37,355 Elapsed Time: 2.524686813354492 seconds
+2016-04-16 18:33:37,355 
+2016-04-16 18:33:37,355 Program Terminated Normally
+2016-04-16 18:33:37,355 
+2016-04-16 18:34:05,011 
+2016-04-16 18:34:05,011 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:34:05,011 Starting Dry White Toast
+2016-04-16 18:34:05,011 Version: 1.0.0
+2016-04-16 18:34:05,011 Release Date: April 11, 2016
+
+2016-04-16 18:34:05,011 The license will expire in 76 days
+
+2016-04-16 18:34:05,011 Local host data
+2016-04-16 18:34:05,011 OS flavor:           linux
+2016-04-16 18:34:05,011 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:34:05,011 
+2016-04-16 18:34:05,011 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:34:05,011 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:34:05,011 Current IP address:  192.168.1.3
+2016-04-16 18:34:05,011 
+2016-04-16 18:34:05,011 
+2016-04-16 18:34:05,012 Starting ParseCommandLine
+
+2016-04-16 18:34:05,013 Verifying which CLI arguments are selected
+2016-04-16 18:34:05,013 verbose selected
+2016-04-16 18:34:05,013 email to hash function selected
+2016-04-16 18:34:05,013 
+2016-04-16 18:34:05,013 Starting ReadWrite Function
+2016-04-16 18:34:05,013 Creating output file path
+2016-04-16 18:34:05,013 Complete
+
+2016-04-16 18:34:05,013 Reading csv file into DataFrame
+2016-04-16 18:34:05,757 Complete
+
+2016-04-16 18:34:05,757 Storing the shape of the Dataframe
+2016-04-16 18:34:05,757 Complete
+
+2016-04-16 18:34:05,757 Verifying there is only one column
+2016-04-16 18:34:05,758 verified
+
+2016-04-16 18:34:05,758 Verifying that all csv rows contain emails
+2016-04-16 18:34:06,296 1000000 emails found in 1000001 rows
+
+2016-04-16 18:34:06,296 Selecting only rows with emails
+2016-04-16 18:34:07,084 complete
+
+2016-04-16 18:34:07,084 Removing all white spaces and making all emails lower cased
+2016-04-16 18:34:07,450 complete
+
+2016-04-16 18:34:07,450 Creating sha512 hash id for each email string
+2016-04-16 18:34:07,498 Failed to read in Client Hash List
+2016-04-16 18:34:07,549 Elapsed Time: 2.5399279594421387 seconds
+2016-04-16 18:34:07,549 
+2016-04-16 18:34:07,549 Program Terminated Normally
+2016-04-16 18:34:07,549 
+2016-04-16 18:35:03,387 
+2016-04-16 18:35:03,387 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:35:03,387 Starting Dry White Toast
+2016-04-16 18:35:03,387 Version: 1.0.0
+2016-04-16 18:35:03,387 Release Date: April 11, 2016
+
+2016-04-16 18:35:03,387 The license will expire in 76 days
+
+2016-04-16 18:35:03,387 Local host data
+2016-04-16 18:35:03,387 OS flavor:           linux
+2016-04-16 18:35:03,387 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:35:03,387 
+2016-04-16 18:35:03,387 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:35:03,387 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:35:03,387 Current IP address:  192.168.1.3
+2016-04-16 18:35:03,387 
+2016-04-16 18:35:03,388 
+2016-04-16 18:35:03,388 Starting ParseCommandLine
+
+2016-04-16 18:35:03,389 Verifying which CLI arguments are selected
+2016-04-16 18:35:03,389 verbose selected
+2016-04-16 18:35:03,389 email to hash function selected
+2016-04-16 18:35:03,389 
+2016-04-16 18:35:03,389 Starting ReadWrite Function
+2016-04-16 18:35:03,389 Creating output file path
+2016-04-16 18:35:03,389 Complete
+
+2016-04-16 18:35:03,389 Reading csv file into DataFrame
+2016-04-16 18:35:04,142 Complete
+
+2016-04-16 18:35:04,142 Storing the shape of the Dataframe
+2016-04-16 18:35:04,142 Complete
+
+2016-04-16 18:35:04,142 Verifying there is only one column
+2016-04-16 18:35:04,142 verified
+
+2016-04-16 18:35:04,142 Verifying that all csv rows contain emails
+2016-04-16 18:35:04,682 1000000 emails found in 1000001 rows
+
+2016-04-16 18:35:04,682 Selecting only rows with emails
+2016-04-16 18:35:05,469 complete
+
+2016-04-16 18:35:05,469 Removing all white spaces and making all emails lower cased
+2016-04-16 18:35:05,827 complete
+
+2016-04-16 18:35:05,827 Creating sha512 hash id for each email string
+2016-04-16 18:35:05,875 Failed to read in Client Hash List
+2016-04-16 18:35:05,928 Elapsed Time: 2.5432353019714355 seconds
+2016-04-16 18:35:05,928 
+2016-04-16 18:35:05,928 Program Terminated Normally
+2016-04-16 18:35:05,928 
+2016-04-16 18:47:43,137 
+2016-04-16 18:47:43,138 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:47:43,138 Starting Dry White Toast
+2016-04-16 18:47:43,138 Version: 1.0.0
+2016-04-16 18:47:43,138 Release Date: April 11, 2016
+
+2016-04-16 18:47:43,138 The license will expire in 76 days
+
+2016-04-16 18:47:43,138 Local host data
+2016-04-16 18:47:43,138 OS flavor:           linux
+2016-04-16 18:47:43,138 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:47:43,138 
+2016-04-16 18:47:43,138 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:47:43,138 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:47:43,138 Current IP address:  192.168.1.3
+2016-04-16 18:47:43,138 
+2016-04-16 18:47:43,138 
+2016-04-16 18:47:43,138 Starting ParseCommandLine
+
+2016-04-16 18:47:43,140 Verifying which CLI arguments are selected
+2016-04-16 18:47:43,140 verbose selected
+2016-04-16 18:47:43,140 email to hash function selected
+2016-04-16 18:47:43,140 
+2016-04-16 18:47:43,140 Starting ReadWrite Function
+2016-04-16 18:47:43,140 Creating output file path
+2016-04-16 18:47:43,140 Complete
+
+2016-04-16 18:47:43,140 Reading csv file into DataFrame
+2016-04-16 18:47:43,942 Complete
+
+2016-04-16 18:47:43,942 Storing the shape of the Dataframe
+2016-04-16 18:47:43,942 Complete
+
+2016-04-16 18:47:43,942 Verifying there is only one column
+2016-04-16 18:47:43,943 verified
+
+2016-04-16 18:47:43,943 Verifying that all csv rows contain emails
+2016-04-16 18:47:44,485 1000000 emails found in 1000001 rows
+
+2016-04-16 18:47:44,486 Selecting only rows with emails
+2016-04-16 18:47:45,326 complete
+
+2016-04-16 18:47:45,326 Removing all white spaces and making all emails lower cased
+2016-04-16 18:47:45,695 complete
+
+2016-04-16 18:47:45,695 Creating sha512 hash id for each email string
+2016-04-16 18:47:45,712 Failed to read in Client Hash List
+2016-04-16 18:47:45,769 Elapsed Time: 2.6362195014953613 seconds
+2016-04-16 18:47:45,769 
+2016-04-16 18:47:45,769 Program Terminated Normally
+2016-04-16 18:47:45,769 
+2016-04-16 18:49:26,631 
+2016-04-16 18:49:26,631 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:49:26,631 Starting Dry White Toast
+2016-04-16 18:49:26,631 Version: 1.0.0
+2016-04-16 18:49:26,631 Release Date: April 11, 2016
+
+2016-04-16 18:49:26,631 The license will expire in 76 days
+
+2016-04-16 18:49:26,631 Local host data
+2016-04-16 18:49:26,631 OS flavor:           linux
+2016-04-16 18:49:26,631 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:49:26,631 
+2016-04-16 18:49:26,631 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:49:26,631 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:49:26,631 Current IP address:  192.168.1.3
+2016-04-16 18:49:26,631 
+2016-04-16 18:49:26,631 
+2016-04-16 18:49:26,631 Starting ParseCommandLine
+
+2016-04-16 18:49:26,633 Verifying which CLI arguments are selected
+2016-04-16 18:49:26,633 verbose selected
+2016-04-16 18:49:26,633 email to hash function selected
+2016-04-16 18:49:26,633 
+2016-04-16 18:49:26,633 Starting ReadWrite Function
+2016-04-16 18:49:26,633 Creating output file path
+2016-04-16 18:49:26,633 Complete
+
+2016-04-16 18:49:26,633 Reading csv file into DataFrame
+2016-04-16 18:49:27,413 Complete
+
+2016-04-16 18:49:27,413 Storing the shape of the Dataframe
+2016-04-16 18:49:27,413 Complete
+
+2016-04-16 18:49:27,413 Verifying there is only one column
+2016-04-16 18:49:27,414 verified
+
+2016-04-16 18:49:27,414 Verifying that all csv rows contain emails
+2016-04-16 18:49:27,972 1000000 emails found in 1000001 rows
+
+2016-04-16 18:49:27,972 Selecting only rows with emails
+2016-04-16 18:49:28,792 complete
+
+2016-04-16 18:49:28,792 Removing all white spaces and making all emails lower cased
+2016-04-16 18:49:29,178 complete
+
+2016-04-16 18:49:29,178 Creating sha512 hash id for each email string
+2016-04-16 18:49:29,194 Failed to read in Client Hash List
+2016-04-16 18:49:29,253 Elapsed Time: 2.6249380111694336 seconds
+2016-04-16 18:49:29,254 
+2016-04-16 18:49:29,254 Program Terminated Normally
+2016-04-16 18:49:29,254 
+2016-04-16 18:50:46,207 
+2016-04-16 18:50:46,207 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:50:46,207 Starting Dry White Toast
+2016-04-16 18:50:46,207 Version: 1.0.0
+2016-04-16 18:50:46,207 Release Date: April 11, 2016
+
+2016-04-16 18:50:46,207 The license will expire in 76 days
+
+2016-04-16 18:50:46,207 Local host data
+2016-04-16 18:50:46,207 OS flavor:           linux
+2016-04-16 18:50:46,207 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:50:46,207 
+2016-04-16 18:50:46,207 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:50:46,207 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:50:46,207 Current IP address:  192.168.1.3
+2016-04-16 18:50:46,207 
+2016-04-16 18:50:46,207 
+2016-04-16 18:50:46,207 Starting ParseCommandLine
+
+2016-04-16 18:50:46,208 Verifying which CLI arguments are selected
+2016-04-16 18:50:46,208 verbose selected
+2016-04-16 18:50:46,209 email to hash function selected
+2016-04-16 18:50:46,209 
+2016-04-16 18:50:46,209 Starting ReadWrite Function
+2016-04-16 18:50:46,209 Creating output file path
+2016-04-16 18:50:46,209 Complete
+
+2016-04-16 18:50:46,209 Reading csv file into DataFrame
+2016-04-16 18:50:46,968 Complete
+
+2016-04-16 18:50:46,969 Storing the shape of the Dataframe
+2016-04-16 18:50:46,969 Complete
+
+2016-04-16 18:50:46,969 Verifying there is only one column
+2016-04-16 18:50:46,969 verified
+
+2016-04-16 18:50:46,969 Verifying that all csv rows contain emails
+2016-04-16 18:50:47,516 1000000 emails found in 1000001 rows
+
+2016-04-16 18:50:47,516 Selecting only rows with emails
+2016-04-16 18:50:48,346 complete
+
+2016-04-16 18:50:48,346 Removing all white spaces and making all emails lower cased
+2016-04-16 18:50:48,725 complete
+
+2016-04-16 18:50:48,725 Creating sha512 hash id for each email string
+2016-04-16 18:50:48,740 Failed to read in Client Hash List
+2016-04-16 18:50:48,795 Elapsed Time: 2.5908846855163574 seconds
+2016-04-16 18:50:48,796 
+2016-04-16 18:50:48,796 Program Terminated Normally
+2016-04-16 18:50:48,796 
+2016-04-16 18:52:04,186 
+2016-04-16 18:52:04,186 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 18:52:04,186 Starting Dry White Toast
+2016-04-16 18:52:04,186 Version: 1.0.0
+2016-04-16 18:52:04,186 Release Date: April 11, 2016
+
+2016-04-16 18:52:04,186 The license will expire in 76 days
+
+2016-04-16 18:52:04,187 Local host data
+2016-04-16 18:52:04,187 OS flavor:           linux
+2016-04-16 18:52:04,187 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 18:52:04,187 
+2016-04-16 18:52:04,187 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 18:52:04,187 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 18:52:04,187 Current IP address:  192.168.1.3
+2016-04-16 18:52:04,187 
+2016-04-16 18:52:04,187 
+2016-04-16 18:52:04,188 Starting ParseCommandLine
+
+2016-04-16 18:52:04,196 Verifying which CLI arguments are selected
+2016-04-16 18:52:04,196 verbose selected
+2016-04-16 18:52:04,197 email to hash function selected
+2016-04-16 18:52:04,197 
+2016-04-16 18:52:04,197 Starting ReadWrite Function
+2016-04-16 18:52:04,198 Creating output file path
+2016-04-16 18:52:04,199 Complete
+
+2016-04-16 18:52:04,199 Reading csv file into DataFrame
+2016-04-16 18:52:05,771 Complete
+
+2016-04-16 18:52:05,772 Storing the shape of the Dataframe
+2016-04-16 18:52:05,772 Complete
+
+2016-04-16 18:52:05,772 Verifying there is only one column
+2016-04-16 18:52:05,772 verified
+
+2016-04-16 18:52:05,772 Verifying that all csv rows contain emails
+2016-04-16 18:52:07,469 1000000 emails found in 1000001 rows
+
+2016-04-16 18:52:07,469 Selecting only rows with emails
+2016-04-16 18:52:09,510 complete
+
+2016-04-16 18:52:09,524 Removing all white spaces and making all emails lower cased
+2016-04-16 18:52:10,431 complete
+
+2016-04-16 18:52:10,432 Creating sha512 hash id for each email string
+2016-04-16 18:52:10,468 Failed to read in Client Hash List
+2016-04-16 18:52:10,585 Elapsed Time: 6.402478933334351 seconds
+2016-04-16 18:52:10,585 
+2016-04-16 18:52:10,585 Program Terminated Normally
+2016-04-16 18:52:10,585 
+2016-04-16 19:08:06,236 
+2016-04-16 19:08:06,237 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 19:08:06,237 Starting Dry White Toast
+2016-04-16 19:08:06,237 Version: 1.0.0
+2016-04-16 19:08:06,237 Release Date: April 11, 2016
+
+2016-04-16 19:08:06,237 The license will expire in 76 days
+
+2016-04-16 19:08:06,237 Local host data
+2016-04-16 19:08:06,237 OS flavor:           linux
+2016-04-16 19:08:06,237 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 19:08:06,237 
+2016-04-16 19:08:06,237 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 19:08:06,237 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 19:08:06,237 Current IP address:  192.168.1.3
+2016-04-16 19:08:06,237 
+2016-04-16 19:08:06,237 
+2016-04-16 19:08:06,237 Starting ParseCommandLine
+
+2016-04-16 19:08:06,238 Verifying which CLI arguments are selected
+2016-04-16 19:08:06,238 verbose selected
+2016-04-16 19:08:06,238 email to hash function selected
+2016-04-16 19:08:06,238 
+2016-04-16 19:08:06,238 Starting ReadWrite Function
+2016-04-16 19:08:06,239 Creating output file path
+2016-04-16 19:08:06,239 Complete
+
+2016-04-16 19:08:06,239 Reading csv file into DataFrame
+2016-04-16 19:08:07,009 Complete
+
+2016-04-16 19:08:07,009 Storing the shape of the Dataframe
+2016-04-16 19:08:07,009 Complete
+
+2016-04-16 19:08:07,009 Verifying there is only one column
+2016-04-16 19:08:07,009 verified
+
+2016-04-16 19:08:07,009 Verifying that all csv rows contain emails
+2016-04-16 19:08:07,550 1000000 emails found in 1000001 rows
+
+2016-04-16 19:08:07,550 Selecting only rows with emails
+2016-04-16 19:08:08,404 complete
+
+2016-04-16 19:08:08,404 Removing all white spaces and making all emails lower cased
+2016-04-16 19:08:08,768 complete
+
+2016-04-16 19:08:08,768 Creating sha512 hash id for each email string
+2016-04-16 19:08:08,786 Failed to read in Client Hash List
+2016-04-16 19:08:08,851 Elapsed Time: 2.6164608001708984 seconds
+2016-04-16 19:08:08,851 
+2016-04-16 19:08:08,851 Program Terminated Normally
+2016-04-16 19:08:08,851 
+2016-04-16 19:08:37,403 
+2016-04-16 19:08:37,403 Executing program from: /home/snarf/PycharmProjects/DryWhiteToast/rnfiv.py
+
+2016-04-16 19:08:37,403 Starting Dry White Toast
+2016-04-16 19:08:37,403 Version: 1.0.0
+2016-04-16 19:08:37,403 Release Date: April 11, 2016
+
+2016-04-16 19:08:37,403 The license will expire in 76 days
+
+2016-04-16 19:08:37,403 Local host data
+2016-04-16 19:08:37,403 OS flavor:           linux
+2016-04-16 19:08:37,403 Kernel version       3.5.1 |Anaconda 4.0.0 (64-bit)| (default, Dec  7 2015, 11:16:01) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+2016-04-16 19:08:37,403 
+2016-04-16 19:08:37,403 Computer name:       snarfsnarfkillspanthro-Lemur
+2016-04-16 19:08:37,403 MAC address:         a4:34:d9:64:a6:45
+2016-04-16 19:08:37,403 Current IP address:  192.168.1.3
+2016-04-16 19:08:37,403 
+2016-04-16 19:08:37,403 
+2016-04-16 19:08:37,403 Starting ParseCommandLine
+
+2016-04-16 19:08:37,404 Verifying which CLI arguments are selected
+2016-04-16 19:08:37,404 verbose selected
+2016-04-16 19:08:37,405 email to hash function selected
+2016-04-16 19:08:37,405 
+2016-04-16 19:08:37,405 Starting ReadWrite Function
+2016-04-16 19:08:37,405 Creating output file path
+2016-04-16 19:08:37,405 Complete
+
+2016-04-16 19:08:37,405 Reading csv file into DataFrame
+2016-04-16 19:08:38,180 Complete
+
+2016-04-16 19:08:38,180 Storing the shape of the Dataframe
+2016-04-16 19:08:38,180 Complete
+
+2016-04-16 19:08:38,180 Verifying there is only one column
+2016-04-16 19:08:38,180 verified
+
+2016-04-16 19:08:38,180 Verifying that all csv rows contain emails
+2016-04-16 19:08:38,732 1000000 emails found in 1000001 rows
+
+2016-04-16 19:08:38,733 Selecting only rows with emails
+2016-04-16 19:08:39,560 complete
+
+2016-04-16 19:08:39,560 Removing all white spaces and making all emails lower cased
+2016-04-16 19:08:39,930 complete
+
+2016-04-16 19:08:39,930 Creating sha512 hash id for each email string
+2016-04-16 19:08:39,969 Failed to read in Client Hash List
+2016-04-16 19:08:40,010 Elapsed Time: 2.610182762145996 seconds
+2016-04-16 19:08:40,010 
+2016-04-16 19:08:40,010 Program Terminated Normally
+2016-04-16 19:08:40,010 
