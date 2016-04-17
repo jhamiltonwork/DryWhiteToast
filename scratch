@@ -1,0 +1,36 @@
+def ReadWrite(elist, outfile):
+    try:
+        logging.info('Starting ReadWrite')
+        DisplayMessage("Starting to make toast with email")
+        output = os.path.join(outfile, "Hashed.csv")
+        coln = ['Email']
+        ecsv = pd.read_csv(elist, names=coln)
+        ecsv['Email'] = ecsv['Email'].apply(lambda x: x.lower().strip())
+        ecsv['Hash'] = ecsv['Email'].apply(lambda s: hashlib.sha512(s).hexdigest().upper().strip())
+        results = ['Hash']
+        ecsv.to_csv(output, sep=',', columns=results, header=False, index=False, encoding='utf-8')
+    except:
+        logging.error("Failed to read in Client Hash List")
+        DisplayMessage("Failed to read in Client Hash List")
+
+
+            parser.add_argument('-c', '--clientHash', required=False,
+                        help="specify the path and csv name of the client hash list")
+
+
+def pHashToEmail(pemail, rHash, outfile):
+    try:
+        logging.info('Starting pHashToEmail')
+        DisplayMessage("Starting to make toast with over easy emails")
+        coln = ['Email']
+        coln2 = ['Hash']
+        pcsv = pd.read_csv(pemail, names=coln)
+        rcsv = pd.read_csv(rHash, names=coln2)
+        pcsv['Email'] = pcsv['Email'].map(lambda x: x.lower().strip())
+        pcsv['Hash'] = pcsv['Email'].map(lambda s: hashlib.sha256(s).hexdigest().upper().strip())
+        common = pcsv.merge(rcsv, on=['Hash'])
+        results = ['Email']
+        common.to_csv(outputfile, sep=',', columns=results, header=False, index=False, encoding='utf-8')
+    except:
+        logging.error("Failed to read in hash list")
+        DisplayMessage("Failed to read in hash lists")

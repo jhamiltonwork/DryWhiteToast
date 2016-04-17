@@ -11,6 +11,7 @@ import socket
 import re
 import uuid
 import random
+import numpy as np
 
 
 def ParseCommandLine():
@@ -118,7 +119,7 @@ def ReadWrite(elist, outfile):
                 logging.info('Generating Initializing Vector and FingerPrint')
                 DisplayMessage('Generating Initializing Vector and FingerPrint')
                 rnfing = ('DgqJYlimINLP')
-                initv = str(int(os.urandom(16).encode('hex'),16))
+                initv = np.random.randint(1,1000000)
                 nstrng = str(initv)
                 logging.info('complete' +'\n')
                 DisplayMessage('complete' + '\n')
@@ -177,6 +178,12 @@ def ReadWrite(elist, outfile):
                 logging.info('Appending Initializing Vector to end of emails')
                 DisplayMessage('Appending Initializing Vector to end of emails')
                 ecsv['Email'] = ecsv.Email.map(str) + nstrng
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Adding toaster')
+                DisplayMessage('Adding toaster')
+                toaster = (rnfing + nstrng)
+                ecsv = ecsv.append([{'Email':toaster}])
                 logging.info('complete' + '\n')
                 DisplayMessage('complete' + '\n')
                 logging.info('Creating sha512 hash id for each email string')
@@ -305,8 +312,9 @@ def pHashToEmail(elist, rHash, outfile):
 
 # ------------ MAIN SCRIPT STARTS HERE -----------------
 if __name__ == '__main__':
+    #import datetime
     cdate = datetime.date.today()
-    exp = datetime.date(2016, 07, 01)
+    exp = datetime.date(2016, 7, 1)
     daystoexp = (exp - cdate)
     if daystoexp.days > 0:
         startTime = time.time()

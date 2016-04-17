@@ -107,7 +107,7 @@ def ReadWrite(elist, outfile):
         DisplayMessage('Complete' + '\n')
         logging.info('Verifying there is only one column')
         DisplayMessage('Verifying there is only one column')
-        if ecol > 1:
+        if (ecsv.shape[1]) < 2:
             logging.info('verified' + '\n')
             DisplayMessage('verified' + '\n')
             logging.info('Verifying that all csv rows contain emails')
@@ -211,7 +211,7 @@ def ReadMergeCompare(cHash, rHash, outfile):
 # ------------ MAIN SCRIPT STARTS HERE -----------------
 if __name__ == '__main__':
     cdate = datetime.date.today()
-    exp = datetime.date(2016, 07, 01)
+    exp = datetime.date(2016, 7, 1)
     daystoexp = (exp - cdate)
     if daystoexp.days > 0:
         startTime = time.time()
