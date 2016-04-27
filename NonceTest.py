@@ -1,4 +1,5 @@
 import pandas as pd
+import random
 import hashlib
 import multiprocessing
 import time
@@ -10,8 +11,8 @@ import datetime
 import socket
 import re
 import uuid
-import random
 import numpy as np
+import string
 
 
 def ParseCommandLine():
@@ -77,6 +78,17 @@ def DisplayMessage(msg):
     return
 
 
+def rentry(rlist, rrow):
+    rlist = np.zeros(rrow)
+    rfill = (rrow + 1)
+    rlist = np.arange(rfill, dtype=np.int).reshape(rfill, 1)
+    return rlist
+
+
+def randomentry(size=27, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for _ in range(size))
+
+
 def ReadWrite(elist, outfile):
     try:
         logging.info('')
@@ -119,7 +131,7 @@ def ReadWrite(elist, outfile):
                 logging.info('Generating Initializing Vector and FingerPrint')
                 DisplayMessage('Generating Initializing Vector and FingerPrint')
                 rnfing = ('DgqJYlimINLP')
-                initv = np.random.randint(1,1000000)
+                initv = np.random.randint(1,500000)
                 nstrng = str(initv)
                 logging.info('complete' +'\n')
                 DisplayMessage('complete' + '\n')
@@ -134,30 +146,78 @@ def ReadWrite(elist, outfile):
                 DisplayMessage('complete' + '\n')
                 logging.info('Appending fingerprint to front of emails')
                 DisplayMessage('Appending fingerprint to front of emails')
-                ecsv['Email'] = rnfing + ecsv.Email.map(str)
+                common['Email'] = rnfing + common.Email.map(str)
                 logging.info('complete' +'\n')
                 DisplayMessage('complete' + '\n')
                 logging.info('Appending Initializing Vector to end of emails')
                 DisplayMessage('Appending Initializing Vector to end of emails')
-                ecsv['Email'] = ecsv.Email.map(str) + nstrng
+                common['Email'] = common.Email.map(str) + nstrng
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Loading toaster')
+                DisplayMessage('Loading toaster')
+                toaster = (rnfing + nstrng)
+                common = common.append([{'Email': toaster}])
                 logging.info('complete' + '\n')
                 DisplayMessage('complete' + '\n')
                 logging.info('Creating sha512 hash id for each email string')
                 DisplayMessage('Creating sha512 hash id for each email string')
-                common['Hash'] = common['Email'].apply(lambda s: hashlib.sha512(s).hexdigest().upper().strip())
+                common['Hash'] = common['Email'].apply(lambda h: hashlib.sha512(h).hexdigest().upper().strip())
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Generate random entries')
+                DisplayMessage('Generate random entries')
+                ranlist = []
+                rent = np.random.randint(1, 1000)
+                rmask = rentry(ranlist, rent)
+                rmask = list(rmask)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Adding entries')
+                DisplayMessage('Adding entries')
+                recol = ['Email']
+                extraentries = pd.DataFrame(columns=recol)
+                extraentries['Email'] = pd.Series(rmask)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Appending random alphanumeric to random entry')
+                DisplayMessage('Appending random alphanumeric to random entry')
+                rappendentry = str(randomentry())
+                extraentries['Email'] = extraentries.Email.map(str)
+                extraentries['Email'] = extraentries['Email'].str.replace('[', rappendentry)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Appending email tag')
+                DisplayMessage('Appending email tag')
+                extraentries['Email'] = extraentries['Email'].str.replace(']', '@boingboing.com')
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Creating Hash Column')
+                DisplayMessage('Creating Hash Column')
+                extraentries['Hash'] = extraentries['Email'].apply(lambda h: hashlib.sha512(h).hexdigest().upper().strip())
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Concatenating two dataframes')
+                DisplayMessage('Concatenating two dataframes')
+                cdf = pd.concat([common, extraentries], ignore_index=True)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Sorting by Hash')
+                DisplayMessage('Sorting by Hash')
+                adf = cdf.sort(['Hash'], ascending=True)
                 logging.info('complete' + '\n')
                 DisplayMessage('complete' + '\n')
                 logging.info('Writing hash list to csv in ' + output)
                 DisplayMessage('Writing hash list to csv in ' + output)
                 results = ['Hash']
-                common.to_csv(output, sep=',', columns=results, header=False, index=False, encoding='utf-8')
+                adf.to_csv(output, sep=',', columns=results, header=False, index=False, encoding='utf-8')
                 logging.info('complete' + '\n')
                 DisplayMessage('complete' + '\n')
             else:
                 logging.info('Verified' + '\n')
                 DisplayMessage('Verified' + '\n')
                 rnfing = str('DgqJYlimINLP')
-                initv = str(int(os.urandom(16).encode('hex'), 32))
+                initv = initv = np.random.randint(1,500000)
                 nstrng = str(initv)
                 logging.info('complete' +'\n')
                 DisplayMessage('complete' + '\n')
@@ -191,18 +251,60 @@ def ReadWrite(elist, outfile):
                 ecsv['Hash'] = ecsv['Email'].apply(lambda s: hashlib.sha512(s).hexdigest().upper().strip())
                 logging.info('complete' + '\n')
                 DisplayMessage('complete' + '\n')
+                logging.info('Generate random entries')
+                DisplayMessage('Generate random entries')
+                ranlist = []
+                rent = np.random.randint(1, 1000)
+                rmask = rentry(ranlist, rent)
+                rmask = list(rmask)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Adding entries')
+                DisplayMessage('Adding entries')
+                recol = ['Email']
+                extraentries = pd.DataFrame(columns=recol)
+                extraentries['Email'] = pd.Series(rmask)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Appending random alphanumeric to random entry')
+                DisplayMessage('Appending random alphanumeric to random entry')
+                rappendentry = str(randomentry())
+                extraentries['Email'] = extraentries.Email.map(str)
+                extraentries['Email'] = extraentries['Email'].str.replace('[', rappendentry)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Appending email tag')
+                DisplayMessage('Appending email tag')
+                extraentries['Email'] = extraentries['Email'].str.replace(']', '@boingboing.com')
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Creating Hash Column')
+                DisplayMessage('Creating Hash Column')
+                extraentries['Hash'] = extraentries['Email'].apply(lambda h: hashlib.sha512(h).hexdigest().upper().strip())
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Concatenating two dataframes')
+                DisplayMessage('Concatenating two dataframes')
+                cdf = pd.concat([ecsv, extraentries], ignore_index=True)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
+                logging.info('Sorting by Hash')
+                DisplayMessage('Sorting by Hash')
+                adf = cdf.sort(['Hash'], ascending=True)
+                logging.info('complete' + '\n')
+                DisplayMessage('complete' + '\n')
                 logging.info('Writing hash list to csv in ' + output)
                 DisplayMessage('Writing hash list to csv in ' + output)
                 results = ['Hash']
-                ecsv.to_csv(output, sep=',', columns=results, header=False, index=False, encoding='utf-8')
+                adf.to_csv(output, sep=',', columns=results, header=False, index=False, encoding='utf-8')
                 logging.info('complete' + '\n')
                 DisplayMessage('complete' + '\n')
         else:
             logging.error('More than one column found ' + 'Number of columns = ' + ecol)
             DisplayMessage('More than one column found ' + 'Number of columns = ' + ecol)
     except:
-        logging.error("Failed to read in Client Hash List")
-        DisplayMessage("Failed to read in Client Hash List")
+        logging.error("Error")
+        DisplayMessage("Error")
 
 
 def pHashToEmail(elist, rHash, outfile):
@@ -323,11 +425,11 @@ if __name__ == '__main__':
 
         spath = os.path.realpath(__file__)
         fpath = str(spath)
-        lpath = fpath.replace('combined.py', '')
-        lpath2 = (lpath + 'Toast.log')
+        lpath = fpath.replace('NonceTest.py', 'NonceTest.log')
+        #lpath2 = (lpath + 'Toast.log')
 
         # Start your logging
-        logging.basicConfig(filename=lpath2, level=logging.DEBUG, format='%(asctime)s %(message)s')
+        logging.basicConfig(filename=lpath, level=logging.DEBUG, format='%(asctime)s %(message)s')
 
         # Record the Start Message
         today = str(cdate)
