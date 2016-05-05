@@ -14,10 +14,8 @@ import uuid
 import numpy as np
 import string
 
-
 partner = 'IPSOS'
 ckey = 'DgqJYlimINLP'
-
 
 
 def ParseCommandLine():
@@ -188,13 +186,27 @@ def cktohash():
 
 def hemail():
     pemail = gl_args.emailList
-    f = lambda x: x.lower().strip()
-    converter = {'email': f}
-    ecol = ['email']
-    ecsv = pd.read_csv(pemail, sep=',', header=None, names=ecol, dtype=str,
+    try:
+        f = lambda x: x.lower().strip()
+        converter = {'email': f}
+        ecol = ['email']
+        ecsv = pd.read_csv(pemail, sep=',', header=None, names=ecol, dtype=str,
                        skip_blank_lines=True, encoding='utf-8', converters=converter)
-    cecsv = ecsv[ecsv['email'].str.contains("@")]
-    return cecsv
+        cecsv = ecsv[ecsv['email'].str.contains("@")]
+        if not UnicodeDecodeError:
+            DisplayMessage('CSV is utf-8 encoded')
+        else:
+            return cecsv
+    except UnicodeDecodeError:
+        DisplayMessage('CSV is cp1252 encoded')
+        f = lambda x: x.lower().strip()
+        converter = {'email': f}
+        ecol = ['email']
+        ecsv = pd.read_csv(pemail, sep=',', header=None, names=ecol, dtype=str,
+                       skip_blank_lines=True, encoding='cp1252', converters=converter)
+        cecsv = ecsv[ecsv['email'].str.contains("@")]
+        return cecsv
+
 
 
 def fivkey(hgendf):
@@ -213,7 +225,7 @@ def fivkey(hgendf):
 def partread():
     rhash = gl_args.rsnHashMatch
     pcsv = pd.read_csv(rhash, sep=',', header=0, usecols=['hash'], dtype=str,
-                           skip_blank_lines=True, encoding='utf-8')
+                       skip_blank_lines=True, encoding='utf-8')
     return pcsv
 
 
