@@ -7,7 +7,7 @@ import time
 partner = 'IPSOS'
 ckey = 'DgqJYlimINLP'
 remail = 'rsnemail.csv'
-phash = 'pHashed.csv'
+phash = 'EmailToResearchNow.csv'
 output = ('ReturnTo' + partner + '.csv')
 
 

@@ -269,7 +269,7 @@ if __name__ == '__main__':
 
         spath = os.path.realpath(__file__)
         fpath = str(spath)
-        lpath = fpath.replace('combined.py', '')
+        lpath = fpath.replace('pmaster.py', '')
         lpath2 = (lpath + 'Toast.log')
 
         # Start your logging
