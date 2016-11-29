@@ -260,7 +260,7 @@ def writeresults(pfile):
 # ------------ MAIN SCRIPT STARTS HERE -----------------
 if __name__ == '__main__':
     cdate = datetime.date.today()
-    exp = datetime.date(2016, 07, 01)
+    exp = datetime.date(2016, 12, 31)
     daystoexp = (exp - cdate)
     if daystoexp.days > 0:
         startTime = time.time()
